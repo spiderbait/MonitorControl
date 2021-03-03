@@ -5,9 +5,7 @@ public class Rule {
     int id;
     int mid;
     String type;
-    String span_start;
-    String span_end;
-    String point;
+    String span;
 
     public int getId() {
         return id;
@@ -33,27 +31,11 @@ public class Rule {
         this.type = type;
     }
 
-    public String getSpan_start() {
-        return span_start;
+    public String getSpan() {
+        return span;
     }
 
-    public void setSpan_start(String span_start) {
-        this.span_start = span_start;
-    }
-
-    public String getSpan_end() {
-        return span_end;
-    }
-
-    public void setSpan_end(String span_end) {
-        this.span_end = span_end;
-    }
-
-    public String getPoint() {
-        return point;
-    }
-
-    public void setPoint(String point) {
-        this.point = point;
+    public void setSpan(String span) {
+        this.span = span;
     }
 }
