@@ -8,10 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EntityFetcher {
-    ConnectorBootstrap cb;
+
+    private final MySQLConnector cb;
 
     public EntityFetcher() {
-        cb = new ConnectorBootstrap();
+        cb = new MySQLConnector();
     }
 
     public List<cn.bosc.monitorcontrol.entity.List> getLists() throws SQLException {

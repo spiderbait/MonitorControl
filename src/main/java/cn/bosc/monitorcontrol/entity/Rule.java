@@ -6,6 +6,15 @@ public class Rule {
     int mid;
     String type;
     String span;
+    String path;
+
+    public String getPath() {
+        return path;
+    }
+
+    public void setPath(String path) {
+        this.path = path;
+    }
 
     public int getId() {
         return id;
