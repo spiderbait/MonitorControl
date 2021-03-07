@@ -31,7 +31,7 @@ public class EntityFetcher {
     }
 
     public List<Rule> getRules() throws SQLException{
-        ResultSet rs = cb.execQuery("select * from MonitorControl.rule");
+        ResultSet rs = cb.execQuery("select * from MonitorControl.rule where enable=1");
         List<Rule> result = new ArrayList<Rule>();
         while(rs.next()){
             //
@@ -40,6 +40,27 @@ public class EntityFetcher {
             row.setMid(rs.getInt("mid"));
             row.setType(rs.getString("type"));
             row.setSpan(rs.getString("span"));
+            row.setPath(rs.getString("path"));
+            row.setJobList(rs.getString("job_list"));
+
+            result.add(row);
+        }
+
+        return result;
+    }
+
+    public List<Rule> getRulesByMid(int mid) throws SQLException{
+        ResultSet rs = cb.execQuery("select * from MonitorControl.rule where mid=" + mid + " and enable=1");
+        List<Rule> result = new ArrayList<>();
+        while(rs.next()){
+            //
+            Rule row = new Rule();
+            row.setId(rs.getInt("id"));
+            row.setMid(rs.getInt("mid"));
+            row.setType(rs.getString("type"));
+            row.setSpan(rs.getString("span"));
+            row.setPath(rs.getString("path"));
+            row.setJobList(rs.getString("job_list"));
 
             result.add(row);
         }

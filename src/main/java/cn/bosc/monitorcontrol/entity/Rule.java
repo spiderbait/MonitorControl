@@ -1,5 +1,8 @@
 package cn.bosc.monitorcontrol.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Rule {
 
     int id;
@@ -7,6 +10,7 @@ public class Rule {
     String type;
     String span;
     String path;
+    List<String> jobList;
 
     public String getPath() {
         return path;
@@ -46,5 +50,17 @@ public class Rule {
 
     public void setSpan(String span) {
         this.span = span;
+    }
+
+    public List<String> getJobList() {
+        return jobList;
+    }
+
+    public void setJobList(String jobListString) {
+        List<String> jobList = new ArrayList<>();
+        for (String s: jobListString.split(",")) {
+            jobList.add(s.replace("'", "").trim());
+        }
+        this.jobList = jobList;
     }
 }
