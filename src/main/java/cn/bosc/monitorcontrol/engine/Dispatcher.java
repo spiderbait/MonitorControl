@@ -19,26 +19,31 @@ public class Dispatcher {
     public void dispatch() {
         this.parser.parse();
         List<cn.bosc.monitorcontrol.entity.List> lists = parser.getLists();
-        HashMap<Integer, Rule> ruleMap = parser.getRuleMap();
+        HashMap<Integer, List<Rule>> ruleMap = parser.getRuleMap();
         for (cn.bosc.monitorcontrol.entity.List list: lists) {
-            String type = ruleMap.get(list.getMid()).getType();
-            String span = ruleMap.get(list.getMid()).getSpan();
-            String path = ruleMap.get(list.getMid()).getPath();
-            List<String> jobList = ruleMap.get(list.getMid()).getJobList();
-            String whereClause = ruleMap.get(list.getMid()).getWhereClause();
-            System.out.println("执行调度作业类型：" + type + "，持续时间：" + span + "输出路径" + path);
-            switch(type.toLowerCase()) {
-                case "cron":
-                    executorService.execute(new CronTaskLauncher(whereClause, span, path, jobList));
-                    break;
-                case "span":
-                    System.out.println();
-                    executorService.execute(new SpanTaskLauncher(whereClause, span, path, jobList));
-                    break;
-                default:
-                    //ERROR
-                    break;
+                System.out.println("list out -> " + list.getName());
+                for (Rule rule: ruleMap.get(list.getMid())) {
+                    String type = rule.getType();
+                    String span = rule.getSpan();
+                    String path = rule.getPath();
+                    List<String> jobList = rule.getJobList();
+                    String whereClause = rule.getWhereClause();
+                    System.out.println("执行调度作业类型：" + type + "，持续时间：" + span + "，输出路径：" + path);
+                    switch(type.toLowerCase()) {
+                        case "cron":
+                            System.out.println("提交了一个cron任务。");
+                            executorService.execute(new CronTaskLauncher(whereClause, span, path, jobList));
+                            break;
+                        case "span":
+                            System.out.println("提交了一个span任务。");
+                            executorService.execute(new SpanTaskLauncher(whereClause, span, path, jobList));
+                            break;
+                        default:
+                            //ERROR
+                            break;
+                }
             }
         }
+        executorService.shutdown();
     }
 }

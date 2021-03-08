@@ -1,9 +1,9 @@
 package cn.bosc.monitorcontrol.dao;
 
 import cn.bosc.monitorcontrol.util.PropertiesUtil;
-
 import java.sql.*;
 
+//TODO: merge oracle and mysql into one class
 public class OracleConnector {
     static final String JDBC_DRIVER = "oracle.jdbc.driver.OracleDriver";
     static final String DB_URL = PropertiesUtil.getProperty("sys.config.oracle.url");
@@ -21,7 +21,7 @@ public class OracleConnector {
             this.conn = DriverManager.getConnection(DB_URL, USER, PASS);
 
             // 执行查询
-            System.out.println(" 实例化Oracle对象...");
+            System.out.println("实例化Oracle对象...");
             this.stmt = conn.createStatement();
         } catch(Exception e){
             // 处理 JDBC 错误

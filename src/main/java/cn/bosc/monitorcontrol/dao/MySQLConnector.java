@@ -20,7 +20,7 @@ public class MySQLConnector {
             this.conn = DriverManager.getConnection(DB_URL, USER, PASS);
 
             // 执行查询
-            System.out.println(" 实例化MySQL对象...");
+            System.out.println("实例化MySQL对象...");
             this.stmt = conn.createStatement();
         } catch(Exception e){
             // 处理 JDBC 错误

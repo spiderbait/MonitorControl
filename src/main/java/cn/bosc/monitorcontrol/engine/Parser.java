@@ -4,13 +4,14 @@ import cn.bosc.monitorcontrol.dao.EntityFetcher;
 import cn.bosc.monitorcontrol.entity.Rule;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
 public class Parser {
     EntityFetcher ef = new EntityFetcher();
     List<cn.bosc.monitorcontrol.entity.List> lists;
-    HashMap<Integer, Rule> ruleMap = new HashMap<Integer, Rule>();
+    HashMap<Integer, List<Rule>> ruleMap = new HashMap<>();
     List<Rule> rules;
 
     private void parseList() {
@@ -25,7 +26,12 @@ public class Parser {
         try {
             this.rules = this.ef.getRules();
             for (Rule rule: this.rules) {
-                this.ruleMap.put(rule.getMid(), rule);
+                if (!this.ruleMap.containsKey(rule.getMid())) {
+                    List<Rule> list = new ArrayList<>();
+                    list.add(rule);
+                } else {
+                    this.ruleMap.get(rule.getMid()).add(rule);
+                }
             }
         } catch (SQLException sqlException) {
             sqlException.printStackTrace();
@@ -41,7 +47,7 @@ public class Parser {
         return lists;
     }
 
-    public HashMap<Integer, Rule> getRuleMap() {
+    public HashMap<Integer, List<Rule>> getRuleMap() {
         return ruleMap;
     }
 }

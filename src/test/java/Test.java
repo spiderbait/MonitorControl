@@ -3,6 +3,7 @@ import cn.bosc.monitorcontrol.entity.List;
 import cn.bosc.monitorcontrol.entity.Rule;
 
 import java.sql.SQLException;
+import java.util.Calendar;
 
 public class Test {
     public static void main(String[] args) throws SQLException {
@@ -21,5 +22,6 @@ public class Test {
 //            System.out.println(rule.getSpan());
 //        }
 
+        System.out.println(Calendar.getInstance().get(Calendar.HOUR_OF_DAY));
     }
 }

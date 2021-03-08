@@ -25,6 +25,9 @@ public class MonitorLogger {
             BufferedWriter out = new BufferedWriter(
                     new OutputStreamWriter(
                             new FileOutputStream(truePath, true)));
+            System.out.println("Span logging: current hour = " + Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
+                    + ", start hour = " + startHour
+                    + ", end hour = " + endHour);
             if (Calendar.getInstance().get(Calendar.HOUR_OF_DAY) == startHour) {
                 out.write(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT) + " START\n");
                 while (true) {
@@ -45,7 +48,10 @@ public class MonitorLogger {
 
     public void cronLogging(String whereClause, String span, String path, List<String> jobList) {
         try {
-            if (Integer.parseInt(span.split(":")[0]) == Calendar.getInstance().get(Calendar.HOUR_OF_DAY)) { // Compare current hour and dispatch hour, start logging if match
+            int startHour = Integer.parseInt(span.split(":")[0]);
+            System.out.println("Cron logging: current hour = " + Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
+                    + ", start hour = " + startHour);
+            if (startHour == Calendar.getInstance().get(Calendar.HOUR_OF_DAY)) { // Compare current hour and dispatch hour, start logging if match
                 String truePath = path.replace("yyyymmdd",
                         TimestampUtil.getNowTimestampString(Constant.PATH_FILENAME_FORMAT));
                 LoggingFileCleanUtil.clean(truePath);
