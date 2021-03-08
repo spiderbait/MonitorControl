@@ -11,6 +11,15 @@ public class Rule {
     String span;
     String path;
     List<String> jobList;
+    String whereClause;
+
+    public String getWhereClause() {
+        return whereClause;
+    }
+
+    public void setWhereClause(String where_clause) {
+        this.whereClause = where_clause;
+    }
 
     public String getPath() {
         return path;

@@ -16,10 +16,30 @@ public class BatchInfoFetcher {
         oc = new OracleConnector();
     }
 
-    public String getDelayedBatchTPlus1(List<String> jobList) throws SQLException {
+    public String getBatchInfo(String whereClause, List<String> jobList) throws SQLException{
+        if (jobList.size() == 0 || !StringUtil.validateWhereClause(whereClause)) {
+            return "监控作业清单或where语句配置有误，请检查。";
+        }
 
-        if (jobList.size() == 0) {
-            return "监控作业清单配置有误，请检查。";
+        StringBuilder sb = new StringBuilder();
+        ResultSet rs = oc.execQuery(StringUtil.getQueryString(whereClause, jobList));
+        String out = StringUtil.parseBatchInfo(rs);
+        String probe = StringUtil.getProbeQueryString(jobList);
+
+        if (out.length() > 0) {
+            sb.append(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT)).append(" ERROR\n");
+            sb.append("\n如下作业存在T+1实效性问题：\n").append(out).append("\n可使用如下语句监控问题作业状态：\n").append(probe);
+        } else {
+            sb.append(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT)).append(" 当前监控作业运行正常。\n");
+        }
+
+        return sb.toString();
+    }
+
+    public String getDelayedBatch(String whereClause, List<String> jobList) throws SQLException {
+
+        if (jobList.size() == 0 || !StringUtil.validateWhereClause(whereClause)) {
+            return "监控作业清单或where语句配置有误，请检查。";
         }
 
         StringBuilder sb = new StringBuilder();
@@ -39,9 +59,9 @@ public class BatchInfoFetcher {
         return sb.toString();
     }
 
-    public String getFailedBatch(List<String> jobList) {
-        if (jobList.size() == 0) {
-            return "监控作业清单配置有误，请检查。";
+    public String getFailedBatch(String whereClause, List<String> jobList) {
+        if (jobList.size() == 0 || !StringUtil.validateWhereClause(whereClause)) {
+            return "监控作业清单或where语句配置有误，请检查。";
         }
 
         StringBuilder sb = new StringBuilder();

@@ -1,5 +1,7 @@
 package cn.bosc.monitorcontrol.util;
 
+import cn.bosc.monitorcontrol.constant.QuerySQL;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -32,5 +34,20 @@ public class StringUtil {
         return sb.toString();
     }
 
+    public static boolean validateWhereClause(String whereClause) {
+        return whereClause.split(" ")[0].toUpperCase().equals("WHERE");
+    }
 
+    public static String getQueryString(String whereClause, List<String> jobList) {
+        return QuerySQL.ETL_JOB_QUERY_BASE +
+                " " + whereClause.toUpperCase() +
+                " AND ETL_JOB IN (" +
+                StringUtil.jobNameJoin(jobList).toUpperCase() + ")";
+    }
+
+    public static String getProbeQueryString(List<String> jobList) {
+        return QuerySQL.ETL_JOB_QUERY_BASE +
+                " WHERE ETL_JOB in (" +
+                StringUtil.jobNameJoin(jobList).toUpperCase() + ") ORDER BY LAST_TXDATE DESC";
+    }
 }

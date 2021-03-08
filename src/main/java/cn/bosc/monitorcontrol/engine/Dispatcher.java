@@ -1,5 +1,7 @@
 package cn.bosc.monitorcontrol.engine;
 
+import cn.bosc.monitorcontrol.engine.launcher.CronTaskLauncher;
+import cn.bosc.monitorcontrol.engine.launcher.SpanTaskLauncher;
 import cn.bosc.monitorcontrol.entity.Rule;
 
 import java.util.HashMap;
@@ -8,7 +10,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 //TODO: create new class by reflect feature
-//TODO: judge whether a span task is already exists or not
+//TODO: judge whether a span task is already exists or not (workaround solved)
 public class Dispatcher {
 
     Parser parser = new Parser();
@@ -23,57 +25,20 @@ public class Dispatcher {
             String span = ruleMap.get(list.getMid()).getSpan();
             String path = ruleMap.get(list.getMid()).getPath();
             List<String> jobList = ruleMap.get(list.getMid()).getJobList();
+            String whereClause = ruleMap.get(list.getMid()).getWhereClause();
             System.out.println("执行调度作业类型：" + type + "，持续时间：" + span + "输出路径" + path);
             switch(type.toLowerCase()) {
                 case "cron":
-                    executorService.execute(new CronTaskLauncher(span, path, jobList));
+                    executorService.execute(new CronTaskLauncher(whereClause, span, path, jobList));
                     break;
                 case "span":
                     System.out.println();
-                    executorService.execute(new SpanTaskLauncher(span, path, jobList));
+                    executorService.execute(new SpanTaskLauncher(whereClause, span, path, jobList));
                     break;
                 default:
                     //ERROR
                     break;
             }
         }
-    }
-}
-
-class CronTaskLauncher implements Runnable{
-
-    String span;
-    String path;
-    List<String> jobList;
-    MonitorLogger ml = new MonitorLogger();
-
-    public CronTaskLauncher(String span, String path, List<String> jobList) {
-        this.span = span;
-        this.path = path;
-        this.jobList = jobList;
-    }
-
-    @Override
-    public void run() {
-        ml.cronLogging(this.span, this.path, this.jobList);
-    }
-}
-
-class SpanTaskLauncher implements Runnable{
-
-    String span;
-    String path;
-    List<String> jobList;
-    MonitorLogger ml = new MonitorLogger();
-
-    public SpanTaskLauncher(String span, String path, List<String> jobList) {
-        this.span = span;
-        this.path = path;
-        this.jobList = jobList;
-    }
-
-    @Override
-    public void run() {
-        ml.spanLogging(this.span, this.path, this.jobList);
     }
 }
