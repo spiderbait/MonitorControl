@@ -8,6 +8,7 @@ public class Rule {
     int id;
     int mid;
     String type;
+    String name;
     String span;
     String path;
     List<String> jobList;
@@ -63,6 +64,14 @@ public class Rule {
 
     public List<String> getJobList() {
         return jobList;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void setJobList(String jobListString) {

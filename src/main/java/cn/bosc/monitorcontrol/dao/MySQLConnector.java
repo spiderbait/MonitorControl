@@ -1,5 +1,7 @@
 package cn.bosc.monitorcontrol.dao;
 import cn.bosc.monitorcontrol.util.PropertiesUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.sql.*;
 
@@ -10,17 +12,20 @@ public class MySQLConnector {
     static final String PASS = PropertiesUtil.getProperty("sys.config.mysql.password");
     Connection conn = null;
     Statement stmt = null;
+    Logger logger = LoggerFactory.getLogger(MySQLConnector.class);
 
     public MySQLConnector() {
         try {
             Class.forName(JDBC_DRIVER);
 
             // 打开链接
-            System.out.println("连接MySQL数据库...");
+            logger.info("Connecting MySQL database...");
+            logger.debug("DB_URL = " + DB_URL);
+            logger.debug("USER = " + USER);
             this.conn = DriverManager.getConnection(DB_URL, USER, PASS);
 
             // 执行查询
-            System.out.println("实例化MySQL对象...");
+            logger.info("Instantiating MySQL object...");
             this.stmt = conn.createStatement();
         } catch(Exception e){
             // 处理 JDBC 错误

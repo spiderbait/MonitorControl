@@ -1,16 +1,20 @@
 package cn.bosc.monitorcontrol.util;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.File;
 
 public class LoggingFileCleanUtil {
+    static final Logger logger = LoggerFactory.getLogger(LoggingFileCleanUtil.class);
     public static void clean(String path) {
         File file = new File(path);
         if (file.exists()) {
             if (file.delete()) {
-                System.out.println("历史日志文件存在，已删除该路径文件：" + path);
+                logger.info("Old logging file exists, creating new at " + path);
             }
         } else {
-            System.out.println("不存在历史日志文件，将会创建新的日志文件。");
+            logger.info("No old logging file exists, creating new at " + path);
         }
     }
 }

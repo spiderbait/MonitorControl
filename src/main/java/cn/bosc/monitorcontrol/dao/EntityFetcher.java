@@ -16,7 +16,7 @@ public class EntityFetcher {
     }
 
     public List<cn.bosc.monitorcontrol.entity.List> getLists() throws SQLException {
-        ResultSet rs = cb.execQuery("select * from MonitorControl.list");
+        ResultSet rs = cb.execQuery("select * from list");
         List<cn.bosc.monitorcontrol.entity.List> result = new ArrayList<cn.bosc.monitorcontrol.entity.List>();
         while(rs.next()){
             //
@@ -31,7 +31,7 @@ public class EntityFetcher {
     }
 
     public List<Rule> getRules() throws SQLException{
-        ResultSet rs = cb.execQuery("select * from MonitorControl.rule where enable=1");
+        ResultSet rs = cb.execQuery("select * from rule where enable=1");
         List<Rule> result = new ArrayList<Rule>();
         while(rs.next()){
             //
@@ -39,10 +39,11 @@ public class EntityFetcher {
             row.setId(rs.getInt("id"));
             row.setMid(rs.getInt("mid"));
             row.setType(rs.getString("type"));
+            row.setName(rs.getString("name"));
             row.setSpan(rs.getString("span"));
             row.setPath(rs.getString("path"));
             row.setJobList(rs.getString("job_list"));
-
+            row.setWhereClause(rs.getString("where_clause"));
             result.add(row);
         }
 
@@ -50,7 +51,7 @@ public class EntityFetcher {
     }
 
     public List<Rule> getRulesByMid(int mid) throws SQLException{
-        ResultSet rs = cb.execQuery("select * from MonitorControl.rule where mid=" + mid + " and enable=1");
+        ResultSet rs = cb.execQuery("select * from rule where mid=" + mid + " and enable=1");
         List<Rule> result = new ArrayList<>();
         while(rs.next()){
             //

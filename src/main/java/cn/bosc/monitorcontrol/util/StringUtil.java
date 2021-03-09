@@ -39,15 +39,26 @@ public class StringUtil {
     }
 
     public static String getQueryString(String whereClause, List<String> jobList) {
-        return QuerySQL.ETL_JOB_QUERY_BASE +
-                " " + whereClause.toUpperCase() +
-                " AND ETL_JOB IN (" +
-                StringUtil.jobNameJoin(jobList).toUpperCase() + ")";
+        if (whereClause.toUpperCase().equals("WHERE COUNT")) {
+            return QuerySQL.ETL_JOB_COUNT_BASE +
+                    " WHERE ETL_JOB IN (" +
+                    StringUtil.jobNameJoin(jobList).toUpperCase() +
+                    ") AND LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')";
+        } else {
+            return QuerySQL.ETL_JOB_QUERY_BASE +
+                    " " + whereClause.toUpperCase() +
+                    " AND ETL_JOB IN (" +
+                    StringUtil.jobNameJoin(jobList).toUpperCase() + ")";
+        }
     }
 
     public static String getProbeQueryString(List<String> jobList) {
-        return QuerySQL.ETL_JOB_QUERY_BASE +
+
+        return "\n使用以下语句查询作业的最新状态：\n" +
+                QuerySQL.ETL_JOB_QUERY_BASE +
                 " WHERE ETL_JOB in (" +
-                StringUtil.jobNameJoin(jobList).toUpperCase() + ") ORDER BY LAST_TXDATE DESC";
+                StringUtil.jobNameJoin(jobList).toUpperCase() +
+                ") ORDER BY LAST_TXDATE DESC";
+
     }
 }
