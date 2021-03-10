@@ -6,7 +6,8 @@ import org.slf4j.LoggerFactory;
 import java.sql.*;
 
 public class MySQLConnector {
-    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+//    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+    static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
     static final String DB_URL = PropertiesUtil.getProperty("sys.config.mysql.url");
     static final String USER = PropertiesUtil.getProperty("sys.config.mysql.user");
     static final String PASS = PropertiesUtil.getProperty("sys.config.mysql.password");
