@@ -50,6 +50,5 @@ public class Dispatcher {
                 }
             }
         }
-        executorService.shutdown();
     }
 }
