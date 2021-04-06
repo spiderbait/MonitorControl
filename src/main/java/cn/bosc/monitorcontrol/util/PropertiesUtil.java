@@ -7,7 +7,7 @@ import java.util.Properties;
 
 public class PropertiesUtil {
 
-    private static final String propertiesPath = "monitor_control.properties";
+    private static final String propertiesPath = "MonitorControl.properties";
 
     public static String getProperty(String key) {
         Properties properties = new Properties();
