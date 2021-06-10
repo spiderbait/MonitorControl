@@ -13,6 +13,15 @@ public class Rule {
     String path;
     List<String> jobList;
     String whereClause;
+    String endKeyword;
+
+    public void setEndKeyword(String endKeyword) {
+        this.endKeyword = endKeyword;
+    }
+
+    public String getEndKeyword() {
+        return endKeyword;
+    }
 
     public String getWhereClause() {
         return whereClause;

@@ -18,7 +18,7 @@ public class MonitorLogger {
     BatchInfoFetcher bif = new BatchInfoFetcher();
     Logger logger = LoggerFactory.getLogger(MonitorLogger.class);
 
-    public void spanLogging(String whereClause, String span, String path, List<String> jobList) {
+    public void spanLogging(String whereClause, String span, String path, List<String> jobList, String endKeyword) {
         try {
 
             int startHour = Integer.parseInt(span.split("->")[0].trim().split(":")[0]);
@@ -28,7 +28,8 @@ public class MonitorLogger {
             LoggingFileCleanUtil.clean(truePath);
             logger.debug("Span logging: current hour = " + Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
                     + ", start hour = " + startHour
-                    + ", end hour = " + endHour);
+                    + ", end hour = " + endHour
+                    + ", end keyword = " + endKeyword);
             if (Calendar.getInstance().get(Calendar.HOUR_OF_DAY) == startHour) {
                 BufferedWriter out = new BufferedWriter(
                         new OutputStreamWriter(
@@ -39,9 +40,9 @@ public class MonitorLogger {
                     out.flush();
                     Thread.sleep(Constant.SPAN_DELAY_IN_MS);
                     if (Calendar.getInstance().get(Calendar.HOUR_OF_DAY) == endHour) {
-                        out.write(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT) + " END\n");
+                        out.write(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT) + " " + endKeyword + "\n");
                         out.close();
-                        System.exit(0);
+                        break;
                     }
                 }
             }
@@ -50,11 +51,12 @@ public class MonitorLogger {
         }
     }
 
-    public void cronLogging(String whereClause, String span, String path, List<String> jobList) {
+    public void cronLogging(String whereClause, String span, String path, List<String> jobList, String endKeyword) {
         try {
             int startHour = Integer.parseInt(span.split(":")[0]);
             logger.debug("Cron logging: current hour = " + Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
-                    + ", start hour = " + startHour);
+                    + ", start hour = " + startHour
+                    + ", end keyword = " + endKeyword);
             if (startHour == Calendar.getInstance().get(Calendar.HOUR_OF_DAY)) { // Compare current hour and dispatch hour, start logging if match
                 String truePath = path.replace("yyyymmdd",
                         TimestampUtil.getNowTimestampString(Constant.PATH_FILENAME_FORMAT));
@@ -63,7 +65,7 @@ public class MonitorLogger {
                 out.write(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT) + " START\n");
                 String msg = bif.getBatchInfo(whereClause, jobList);
                 out.write(msg);
-                out.write(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT) + " END\n");
+                out.write(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT) + " " + endKeyword + "\n");
                 String probe = StringUtil.getProbeQueryString(jobList);
                 out.write(probe);
                 out.flush();

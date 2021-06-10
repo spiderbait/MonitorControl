@@ -21,7 +21,7 @@ public class Parser {
         try {
             this.lists = this.ef.getLists();
             logger.info("Dispatch task lists parsed.");
-        } catch (SQLException sqlException) {
+        } catch (SQLException | ClassNotFoundException sqlException) {
             sqlException.printStackTrace();
         }
     }

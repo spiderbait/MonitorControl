@@ -30,7 +30,7 @@ public class DBConnector {
         this.PASS = PropertiesUtil.getProperty("sys.config.oracle.password");
     }
 
-    public void initConnection() {
+    public void getConnection() {
         try {
             Class.forName(JDBC_DRIVER);
 

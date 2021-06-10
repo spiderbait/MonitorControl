@@ -12,12 +12,12 @@ import java.util.List;
 
 public class BatchInfoFetcher {
 
-    private final OracleConnector oc;
+//    private final OracleConnector oc;
     Logger logger = LoggerFactory.getLogger(BatchInfoFetcher.class);
 
-    public BatchInfoFetcher() {
-        oc = new OracleConnector();
-    }
+//    public BatchInfoFetcher() {
+//        oc = new OracleConnector();
+//    }
 
     public String getBatchInfo(String whereClause, List<String> jobList) throws SQLException{
 
@@ -26,6 +26,8 @@ public class BatchInfoFetcher {
         }
 
         StringBuilder sb = new StringBuilder();
+        OracleConnector oc = new OracleConnector();
+        oc.getConnection();
         ResultSet rs = oc.execQuery(StringUtil.getQueryString(whereClause, jobList));
 
         if (whereClause.toUpperCase().startsWith("WHERE COUNT")) {
@@ -35,6 +37,7 @@ public class BatchInfoFetcher {
             while (rs.next()) {
                 n = rs.getInt("COUNT(*)");
             }
+
             logger.debug("Count threshold = " + threshold + ", count(*) = " + n);
             if (n < threshold) {
                 sb.append(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT)).append(" ERROR\n");
@@ -52,7 +55,7 @@ public class BatchInfoFetcher {
                 sb.append(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT)).append(" 当前监控作业运行正常。\n");
             }
         }
-
+        oc.closeConnection();
         return sb.toString();
     }
 
@@ -67,6 +70,8 @@ public class BatchInfoFetcher {
 
         String query = "SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd') AND ETL_JOB IN ("
                 + StringUtil.jobNameJoin(jobList) + ")";
+        OracleConnector oc = new OracleConnector();
+        oc.getConnection();
         ResultSet rs = oc.execQuery(query);
         String probe = "SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE ETL_JOB IN ("
                 + StringUtil.jobNameJoin(jobList) + ") ORDER BY LAST_TXDATE DESC;\n";
@@ -77,6 +82,7 @@ public class BatchInfoFetcher {
         } else {
             sb.append(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT)).append(" 当前监控作业运行正常。\n");
         }
+        oc.closeConnection();
         return sb.toString();
     }
 
@@ -87,10 +93,11 @@ public class BatchInfoFetcher {
         }
 
         StringBuilder sb = new StringBuilder();
-
+        OracleConnector oc = new OracleConnector();
         try {
             String query = "SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE LAST_JOBSTATUS='Failed' AND ETL_JOB IN ("
                     + StringUtil.jobNameJoin(jobList) + ")";
+            oc.getConnection();
             ResultSet rs = oc.execQuery(query);
             String probe = "SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE ETL_JOB IN ("
                     + StringUtil.jobNameJoin(jobList) + ") ORDER BY LAST_TXDATE DESC;\n";
@@ -101,9 +108,11 @@ public class BatchInfoFetcher {
             } else {
                 sb.append(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT)).append(" 当前监控作业运行正常。\n");
             }
+            oc.closeConnection();
         }catch (SQLException e) {
             e.printStackTrace();
         }
+
         return sb.toString();
     }
 

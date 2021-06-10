@@ -4,9 +4,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 public class MySQLConnector {
-//    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
     static final String DB_URL = PropertiesUtil.getProperty("sys.config.mysql.url");
     static final String USER = PropertiesUtil.getProperty("sys.config.mysql.user");
@@ -15,47 +17,94 @@ public class MySQLConnector {
     Statement stmt = null;
     Logger logger = LoggerFactory.getLogger(MySQLConnector.class);
 
-    public MySQLConnector() {
+//    public MySQLConnector() {
+//        try {
+//            Class.forName(JDBC_DRIVER);
+//
+//            // 打开链接
+//            logger.info("Connecting MySQL database...");
+//            logger.debug("DB_URL = " + DB_URL);
+//            logger.debug("USER = " + USER);
+//            this.conn = DriverManager.getConnection(DB_URL, USER, PASS);
+//
+//            // 执行查询
+//            logger.info("Instantiating MySQL object...");
+//            this.stmt = conn.createStatement();
+//        } catch(Exception e){
+//            // 处理 JDBC 错误
+//            e.printStackTrace();
+//        }// 处理 Class.forName 错误
+//
+////        }finally{
+////            // 关闭资源
+////            try{
+////                if(stmt!=null) stmt.close();
+////            }catch(SQLException se2){
+////                se2.printStackTrace();
+////            }// 什么都不做
+////            try{
+////                if(conn!=null) conn.close();
+////            }catch(SQLException se){
+////                se.printStackTrace();
+////            }
+////        }
+//    }
+
+    public boolean getConnection() {
+        if (this.conn != null || this.stmt != null) {
+            return false;
+        }
         try {
             Class.forName(JDBC_DRIVER);
-
             // 打开链接
             logger.info("Connecting MySQL database...");
             logger.debug("DB_URL = " + DB_URL);
             logger.debug("USER = " + USER);
             this.conn = DriverManager.getConnection(DB_URL, USER, PASS);
-
-            // 执行查询
+//
+//            // 执行查询
             logger.info("Instantiating MySQL object...");
             this.stmt = conn.createStatement();
-        } catch(Exception e){
-            // 处理 JDBC 错误
+            logger.info("MySQL connection established.");
+            return true;
+        } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
-        }// 处理 Class.forName 错误
-
-//        }finally{
-//            // 关闭资源
-//            try{
-//                if(stmt!=null) stmt.close();
-//            }catch(SQLException se2){
-//                se2.printStackTrace();
-//            }// 什么都不做
-//            try{
-//                if(conn!=null) conn.close();
-//            }catch(SQLException se){
-//                se.printStackTrace();
-//            }
-//        }
+            return false;
+        }
     }
 
     public ResultSet execQuery(String query) {
         ResultSet rs = null;
         try {
-            rs = stmt.executeQuery(query);
+            rs = this.stmt.executeQuery(query);
+            logger.debug("Fetched results for query:" + query);
         } catch (SQLException sqlException) {
             sqlException.printStackTrace();
         }
         return rs;
+    }
+
+    public void closeConnection() throws SQLException {
+        if (this.stmt != null) {
+            this.stmt.close();
+        }
+        if (this.conn != null) {
+            this.conn.close();
+        }
+        logger.debug("MySQL connection closed.");
+    }
+
+
+
+    public static void main(String[] args) throws SQLException {
+       MySQLConnector connector = new MySQLConnector();
+       connector.getConnection();
+       ResultSet rs = connector.execQuery("select * from rule");
+       while(rs.next()) {
+
+       }
+       connector.closeConnection();
+
     }
 
 //    public static void main(String[] args) {
