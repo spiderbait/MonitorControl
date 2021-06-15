@@ -1,0 +1,292 @@
+2021-03-09 09:29:08 DEBUG Log4jTest:7 - DEBUG TEST
+2021-03-09 09:29:08 ERROR Log4jTest:8 - ERROR TEST
+2021-03-09 09:29:08 INFO  Log4jTest:9 - INFO TEST
+2021-03-09 09:30:24 DEBUG Log4jTest:7 - DEBUG TEST
+2021-03-09 09:30:24 ERROR Log4jTest:8 - ERROR TEST
+2021-03-09 09:30:24 INFO  Log4jTest:9 - INFO TEST
+2021-03-09 09:30:40 DEBUG Log4jTest:7 - DEBUG TEST
+2021-03-09 09:30:40 ERROR Log4jTest:8 - ERROR TEST
+2021-03-09 09:30:40 INFO  Log4jTest:9 - INFO TEST
+2021-03-09 09:35:23 DEBUG Log4jTest:7 - DEBUG TEST
+2021-03-09 09:35:23 ERROR Log4jTest:8 - ERROR TEST
+2021-03-09 09:35:23 INFO  Log4jTest:9 - INFO TEST
+2021-03-09 09:35:51 mainhread: [DEBUG] Log4jTest:7 - DEBUG TEST
+2021-03-09 09:35:51 mainhread: [ERROR] Log4jTest:8 - ERROR TEST
+2021-03-09 09:35:51 mainhread: [INFO] Log4jTest:9 - INFO TEST
+2021-03-09 09:53:48 mainhread: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-03-09 09:53:48 mainhread: [DEBUG] Parser:33 - Rule mid = 1
+2021-03-09 09:53:48 mainhread: [DEBUG] Parser:33 - Rule mid = 1
+2021-03-09 09:53:48 mainhread: [DEBUG] Dispatcher:27 - Executing dispatch task mid = 1, dispatch name = EAST
+2021-03-09 09:53:48 mainhread: [DEBUG] Dispatcher:34 - Executing dispatch task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_7am_yyyymmdd.log, where clause = null
+2021-03-09 09:53:48 mainhread: [INFO] Dispatcher:39 - Submitted an cron task.
+2021-03-09 09:53:48 mainhread: [DEBUG] Dispatcher:34 - Executing dispatch task type = span, time span = 11:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_yyyymmdd.log, where clause = null
+2021-03-09 09:53:48 mainhread: [INFO] Dispatcher:43 - Submitted an span task.
+2021-03-09 09:56:11 mainhread: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-03-09 09:56:11 mainhread: [DEBUG] Parser:33 - Rule mid = 1
+2021-03-09 09:56:11 mainhread: [DEBUG] Parser:33 - Rule mid = 1
+2021-03-09 09:56:11 mainhread: [DEBUG] Dispatcher:27 - Executing dispatch task mid = 1, dispatch name = EAST
+2021-03-09 09:56:11 mainhread: [DEBUG] Dispatcher:34 - Executing dispatch task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_7am_yyyymmdd.log, where clause = null
+2021-03-09 09:56:11 mainhread: [INFO] Dispatcher:39 - Submitted an cron task.
+2021-03-09 09:56:11 pool-1-thread-1hread: [DEBUG] MonitorLogger:55 - Cron logging: current hour = 9, start hour = 11
+2021-03-09 09:56:11 mainhread: [DEBUG] Dispatcher:34 - Executing dispatch task type = span, time span = 11:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_yyyymmdd.log, where clause = null
+2021-03-09 09:56:11 mainhread: [INFO] Dispatcher:43 - Submitted an span task.
+2021-03-09 09:56:11 pool-1-thread-2hread: [DEBUG] MonitorLogger:31 - Span logging: current hour = 9, start hour = 11, end hour = 11
+2021-03-09 10:20:40 mainhread: [INFO] MySQLConnector:22 - 连接MySQL数据库...
+2021-03-09 10:20:40 mainhread: [INFO] MySQLConnector:26 - 实例化MySQL对象...
+2021-03-09 10:20:41 mainhread: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-03-09 10:20:41 mainhread: [DEBUG] Parser:33 - Rule mid = 1
+2021-03-09 10:20:41 mainhread: [DEBUG] Parser:33 - Rule mid = 1
+2021-03-09 10:20:41 mainhread: [DEBUG] Dispatcher:27 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-03-09 10:20:41 mainhread: [DEBUG] Dispatcher:34 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_7am_yyyymmdd.log, where clause = null
+2021-03-09 10:20:41 mainhread: [INFO] OracleConnector:24 - 连接Oracle数据库...
+2021-03-09 10:20:41 mainhread: [INFO] OracleConnector:28 - 实例化Oracle对象...
+2021-03-09 10:20:41 mainhread: [INFO] Dispatcher:39 - Submitted an cron task.
+2021-03-09 10:20:41 pool-1-thread-1hread: [DEBUG] MonitorLogger:55 - Cron logging: current hour = 10, start hour = 11
+2021-03-09 10:20:41 mainhread: [DEBUG] Dispatcher:34 - Executing scheduled task type = span, time span = 11:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_yyyymmdd.log, where clause = null
+2021-03-09 10:20:41 mainhread: [INFO] OracleConnector:24 - 连接Oracle数据库...
+2021-03-09 10:20:41 mainhread: [INFO] OracleConnector:28 - 实例化Oracle对象...
+2021-03-09 10:20:41 mainhread: [INFO] Dispatcher:43 - Submitted an span task.
+2021-03-09 10:20:41 pool-1-thread-2hread: [DEBUG] MonitorLogger:31 - Span logging: current hour = 10, start hour = 11, end hour = 11
+2021-03-09 10:21:24 main: [INFO] MySQLConnector:22 - 连接MySQL数据库...
+2021-03-09 10:21:25 main: [INFO] MySQLConnector:26 - 实例化MySQL对象...
+2021-03-09 10:21:25 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-03-09 10:21:25 main: [DEBUG] Parser:33 - Rule mid = 1
+2021-03-09 10:21:25 main: [DEBUG] Parser:33 - Rule mid = 1
+2021-03-09 10:21:25 main: [DEBUG] Dispatcher:27 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-03-09 10:21:25 main: [DEBUG] Dispatcher:34 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_7am_yyyymmdd.log, where clause = null
+2021-03-09 10:21:25 main: [INFO] OracleConnector:24 - 连接Oracle数据库...
+2021-03-09 10:21:25 main: [INFO] OracleConnector:28 - 实例化Oracle对象...
+2021-03-09 10:21:25 main: [INFO] Dispatcher:39 - Submitted an cron task.
+2021-03-09 10:21:25 pool-1-thread-1: [DEBUG] MonitorLogger:55 - Cron logging: current hour = 10, start hour = 11
+2021-03-09 10:21:25 main: [DEBUG] Dispatcher:34 - Executing scheduled task type = span, time span = 11:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_yyyymmdd.log, where clause = null
+2021-03-09 10:21:25 main: [INFO] OracleConnector:24 - 连接Oracle数据库...
+2021-03-09 10:21:26 main: [INFO] OracleConnector:28 - 实例化Oracle对象...
+2021-03-09 10:21:26 main: [INFO] Dispatcher:43 - Submitted an span task.
+2021-03-09 10:21:26 pool-1-thread-2: [DEBUG] MonitorLogger:31 - Span logging: current hour = 10, start hour = 11, end hour = 11
+2021-03-09 10:24:10 main: [INFO] MySQLConnector:22 - 连接MySQL数据库...
+2021-03-09 10:24:10 main: [INFO] MySQLConnector:26 - 实例化MySQL对象...
+2021-03-09 10:24:10 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-03-09 10:24:10 main: [DEBUG] Parser:33 - Rule mid = 1
+2021-03-09 10:24:10 main: [DEBUG] Parser:33 - Rule mid = 1
+2021-03-09 10:24:10 main: [DEBUG] Dispatcher:27 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-03-09 10:24:10 main: [DEBUG] Dispatcher:34 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_7am_yyyymmdd.log, where clause = null
+2021-03-09 10:24:10 main: [INFO] OracleConnector:24 - 连接Oracle数据库...
+2021-03-09 10:24:11 main: [INFO] OracleConnector:28 - 实例化Oracle对象...
+2021-03-09 10:24:11 main: [INFO] Dispatcher:39 - Submitted an cron task.
+2021-03-09 10:24:11 pool-1-thread-1: [DEBUG] MonitorLogger:55 - Cron logging: current hour = 10, start hour = 11
+2021-03-09 10:24:11 main: [DEBUG] Dispatcher:34 - Executing scheduled task type = span, time span = 11:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_yyyymmdd.log, where clause = null
+2021-03-09 10:24:11 main: [INFO] OracleConnector:24 - 连接Oracle数据库...
+2021-03-09 10:24:11 main: [INFO] OracleConnector:28 - 实例化Oracle对象...
+2021-03-09 10:24:11 main: [INFO] Dispatcher:43 - Submitted an span task.
+2021-03-09 10:24:11 pool-1-thread-2: [INFO] LoggingFileCleanUtil:14 - Old logging file exists, creating new at /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_20210309.log
+2021-03-09 10:24:11 pool-1-thread-2: [DEBUG] MonitorLogger:31 - Span logging: current hour = 10, start hour = 11, end hour = 11
+2021-03-09 11:00:24 main: [INFO] OracleConnector:24 - 连接Oracle数据库...
+2021-03-09 11:00:24 main: [INFO] OracleConnector:28 - 实例化Oracle对象...
+2021-03-09 11:00:56 main: [INFO] OracleConnector:24 - 连接Oracle数据库...
+2021-03-09 11:00:56 main: [INFO] OracleConnector:28 - 实例化Oracle对象...
+2021-03-09 11:01:32 main: [INFO] OracleConnector:24 - 连接Oracle数据库...
+2021-03-09 11:01:32 main: [INFO] OracleConnector:28 - 实例化Oracle对象...
+2021-03-09 11:01:51 main: [INFO] OracleConnector:24 - 连接Oracle数据库...
+2021-03-09 11:01:51 main: [INFO] OracleConnector:28 - 实例化Oracle对象...
+2021-03-09 11:03:27 main: [INFO] OracleConnector:24 - 连接Oracle数据库...
+2021-03-09 11:03:27 main: [INFO] OracleConnector:28 - 实例化Oracle对象...
+2021-03-09 11:05:32 main: [INFO] OracleConnector:24 - 连接Oracle数据库...
+2021-03-09 11:05:32 main: [INFO] OracleConnector:28 - 实例化Oracle对象...
+2021-03-09 13:23:32 main: [INFO] MySQLConnector:22 - 连接MySQL数据库...
+2021-03-09 13:23:33 main: [INFO] MySQLConnector:26 - 实例化MySQL对象...
+2021-03-09 13:23:33 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-03-09 13:23:33 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 早上七点定点监控
+2021-03-09 13:23:33 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 七点至九点监控
+2021-03-09 13:23:33 main: [DEBUG] Dispatcher:28 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-03-09 13:23:33 main: [DEBUG] Dispatcher:35 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_7am_yyyymmdd.log, where clause = null
+2021-03-09 13:23:33 main: [INFO] OracleConnector:24 - 连接Oracle数据库...
+2021-03-09 13:23:33 main: [INFO] OracleConnector:28 - 实例化Oracle对象...
+2021-03-09 13:23:33 main: [INFO] Dispatcher:40 - Submitted an cron task.
+2021-03-09 13:23:33 pool-1-thread-1: [DEBUG] MonitorLogger:56 - Cron logging: current hour = 13, start hour = 11
+2021-03-09 13:23:33 main: [DEBUG] Dispatcher:35 - Executing scheduled task type = span, time span = 11:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_yyyymmdd.log, where clause = null
+2021-03-09 13:23:33 main: [INFO] OracleConnector:24 - 连接Oracle数据库...
+2021-03-09 13:23:33 main: [INFO] OracleConnector:28 - 实例化Oracle对象...
+2021-03-09 13:23:33 main: [INFO] Dispatcher:44 - Submitted an span task.
+2021-03-09 13:23:33 main: [INFO] Main:16 - 2021-03-09 13:23:33 本轮执行结束。
+2021-03-09 13:23:33 pool-1-thread-2: [INFO] LoggingFileCleanUtil:14 - Old logging file exists, creating new at /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_20210309.log
+2021-03-09 13:23:33 pool-1-thread-2: [DEBUG] MonitorLogger:32 - Span logging: current hour = 13, start hour = 11, end hour = 11
+2021-03-09 13:26:52 main: [INFO] MySQLConnector:22 - 连接MySQL数据库...
+2021-03-09 13:26:52 main: [INFO] MySQLConnector:26 - 实例化MySQL对象...
+2021-03-09 13:26:52 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-03-09 13:26:52 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 早上七点定点监控
+2021-03-09 13:26:52 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 七点至九点监控
+2021-03-09 13:26:52 main: [DEBUG] Dispatcher:28 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-03-09 13:26:52 main: [DEBUG] Dispatcher:35 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_7am_yyyymmdd.log, where clause = null
+2021-03-09 13:26:52 main: [INFO] OracleConnector:24 - 连接Oracle数据库...
+2021-03-09 13:26:53 main: [INFO] OracleConnector:28 - 实例化Oracle对象...
+2021-03-09 13:26:53 main: [INFO] Dispatcher:40 - Submitted an cron task.
+2021-03-09 13:26:53 pool-1-thread-1: [DEBUG] MonitorLogger:56 - Cron logging: current hour = 13, start hour = 11
+2021-03-09 13:26:53 main: [DEBUG] Dispatcher:35 - Executing scheduled task type = span, time span = 11:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_yyyymmdd.log, where clause = null
+2021-03-09 13:26:53 main: [INFO] OracleConnector:24 - 连接Oracle数据库...
+2021-03-09 13:26:53 main: [INFO] OracleConnector:28 - 实例化Oracle对象...
+2021-03-09 13:26:53 main: [INFO] Dispatcher:44 - Submitted an span task.
+2021-03-09 13:26:53 main: [INFO] Main:16 - One turn executed.
+2021-03-09 13:26:53 pool-1-thread-2: [INFO] LoggingFileCleanUtil:14 - Old logging file exists, creating new at /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_20210309.log
+2021-03-09 13:26:53 pool-1-thread-2: [DEBUG] MonitorLogger:29 - Span logging: current hour = 13, start hour = 11, end hour = 11
+2021-03-09 13:27:58 main: [INFO] MySQLConnector:22 - 连接MySQL数据库...
+2021-03-09 13:27:58 main: [INFO] MySQLConnector:26 - 实例化MySQL对象...
+2021-03-09 13:27:58 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-03-09 13:27:58 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 早上七点定点监控
+2021-03-09 13:27:58 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 七点至九点监控
+2021-03-09 13:27:58 main: [DEBUG] Dispatcher:28 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-03-09 13:27:58 main: [DEBUG] Dispatcher:35 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_7am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-03-09 13:27:58 main: [INFO] OracleConnector:24 - 连接Oracle数据库...
+2021-03-09 13:27:59 main: [INFO] OracleConnector:28 - 实例化Oracle对象...
+2021-03-09 13:27:59 main: [INFO] Dispatcher:40 - Submitted an cron task.
+2021-03-09 13:27:59 pool-1-thread-1: [DEBUG] MonitorLogger:56 - Cron logging: current hour = 13, start hour = 11
+2021-03-09 13:27:59 main: [DEBUG] Dispatcher:35 - Executing scheduled task type = span, time span = 11:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-03-09 13:27:59 main: [INFO] OracleConnector:24 - 连接Oracle数据库...
+2021-03-09 13:27:59 main: [INFO] OracleConnector:28 - 实例化Oracle对象...
+2021-03-09 13:27:59 main: [INFO] Dispatcher:44 - Submitted an span task.
+2021-03-09 13:27:59 main: [INFO] Main:16 - One turn executed.
+2021-03-09 13:27:59 pool-1-thread-2: [INFO] LoggingFileCleanUtil:17 - No old logging file exists, creating new at /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_20210309.log
+2021-03-09 13:27:59 pool-1-thread-2: [DEBUG] MonitorLogger:29 - Span logging: current hour = 13, start hour = 11, end hour = 11
+2021-03-09 13:29:44 main: [INFO] MySQLConnector:22 - Connecting MySQL database...
+2021-03-09 13:29:45 main: [INFO] MySQLConnector:26 - Instantiating MySQL object...
+2021-03-09 13:29:45 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-03-09 13:29:45 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 早上七点定点监控
+2021-03-09 13:29:45 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 七点至九点监控
+2021-03-09 13:29:45 main: [DEBUG] Dispatcher:28 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-03-09 13:29:45 main: [DEBUG] Dispatcher:35 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_7am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-03-09 13:29:45 main: [INFO] OracleConnector:24 - Connecting Oracle database...
+2021-03-09 13:29:45 main: [INFO] OracleConnector:28 - Instantiating Oracle object...
+2021-03-09 13:29:45 main: [INFO] Dispatcher:40 - Submitted an cron task.
+2021-03-09 13:29:45 pool-1-thread-1: [DEBUG] MonitorLogger:56 - Cron logging: current hour = 13, start hour = 11
+2021-03-09 13:29:45 main: [DEBUG] Dispatcher:35 - Executing scheduled task type = span, time span = 11:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-03-09 13:29:45 main: [INFO] OracleConnector:24 - Connecting Oracle database...
+2021-03-09 13:29:45 main: [INFO] OracleConnector:28 - Instantiating Oracle object...
+2021-03-09 13:29:45 main: [INFO] Dispatcher:44 - Submitted an span task.
+2021-03-09 13:29:45 main: [INFO] Main:16 - One turn executed.
+2021-03-09 13:29:45 pool-1-thread-2: [INFO] LoggingFileCleanUtil:17 - No old logging file exists, creating new at /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_20210309.log
+2021-03-09 13:29:45 pool-1-thread-2: [DEBUG] MonitorLogger:29 - Span logging: current hour = 13, start hour = 11, end hour = 11
+2021-03-09 14:14:55 main: [INFO] MySQLConnector:22 - Connecting MySQL database...
+2021-03-09 14:14:55 main: [INFO] MySQLConnector:26 - Instantiating MySQL object...
+2021-03-09 14:14:55 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-03-09 14:14:55 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 早上七点定点监控
+2021-03-09 14:14:55 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 七点至九点监控
+2021-03-09 14:14:55 main: [DEBUG] Dispatcher:28 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-03-09 14:14:55 main: [DEBUG] Dispatcher:35 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_7am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-03-09 14:14:55 main: [INFO] OracleConnector:24 - Connecting Oracle database...
+2021-03-09 14:14:56 main: [INFO] OracleConnector:28 - Instantiating Oracle object...
+2021-03-09 14:14:56 main: [INFO] Dispatcher:40 - Submitted an cron task.
+2021-03-09 14:14:56 pool-1-thread-1: [DEBUG] MonitorLogger:56 - Cron logging: current hour = 14, start hour = 11
+2021-03-09 14:14:56 main: [DEBUG] Dispatcher:35 - Executing scheduled task type = span, time span = 11:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-03-09 14:14:56 main: [INFO] OracleConnector:24 - Connecting Oracle database...
+2021-03-09 14:14:56 main: [INFO] OracleConnector:28 - Instantiating Oracle object...
+2021-03-09 14:14:56 main: [INFO] Dispatcher:44 - Submitted an span task.
+2021-03-09 14:14:56 main: [INFO] Main:16 - One turn executed.
+2021-03-09 14:14:56 pool-1-thread-2: [INFO] LoggingFileCleanUtil:17 - No old logging file exists, creating new at /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_20210309.log
+2021-03-09 14:14:56 pool-1-thread-2: [DEBUG] MonitorLogger:29 - Span logging: current hour = 14, start hour = 11, end hour = 11
+2021-03-10 14:43:44 main: [INFO] MySQLConnector:23 - Connecting MySQL database...
+2021-03-10 14:43:44 main: [DEBUG] MySQLConnector:24 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-03-10 14:43:44 main: [DEBUG] MySQLConnector:25 - USER = root
+2021-03-10 14:43:44 main: [INFO] MySQLConnector:29 - Instantiating MySQL object...
+2021-03-10 14:43:44 main: [INFO] Main:14 - MonitorControl starting...
+2021-03-10 14:43:44 main: [INFO] Main:17 - Current minute = 43, second = 44
+2021-03-10 15:00:03 main: [INFO] MySQLConnector:23 - Connecting MySQL database...
+2021-03-10 15:00:03 main: [DEBUG] MySQLConnector:24 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-03-10 15:00:03 main: [DEBUG] MySQLConnector:25 - USER = root
+2021-03-10 15:00:03 main: [INFO] MySQLConnector:29 - Instantiating MySQL object...
+2021-03-10 15:00:03 main: [INFO] Main:14 - MonitorControl starting...
+2021-03-10 15:00:03 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-03-10 15:00:03 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 早上七点定点监控
+2021-03-10 15:00:03 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 七点至九点监控
+2021-03-10 15:00:03 main: [DEBUG] Dispatcher:28 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-03-10 15:00:03 main: [DEBUG] Dispatcher:35 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_7am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-03-10 15:00:03 main: [INFO] OracleConnector:24 - Connecting Oracle database...
+2021-03-10 15:00:03 main: [DEBUG] OracleConnector:25 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-03-10 15:00:03 main: [DEBUG] OracleConnector:26 - USER = system
+2021-03-10 15:00:04 main: [INFO] OracleConnector:30 - Instantiating Oracle object...
+2021-03-10 15:00:04 main: [INFO] Dispatcher:40 - Submitted an cron task.
+2021-03-10 15:00:04 pool-1-thread-1: [DEBUG] MonitorLogger:56 - Cron logging: current hour = 15, start hour = 11
+2021-03-10 15:00:04 main: [DEBUG] Dispatcher:35 - Executing scheduled task type = span, time span = 11:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-03-10 15:00:04 main: [INFO] OracleConnector:24 - Connecting Oracle database...
+2021-03-10 15:00:04 main: [DEBUG] OracleConnector:25 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-03-10 15:00:04 main: [DEBUG] OracleConnector:26 - USER = system
+2021-03-10 15:00:04 main: [INFO] OracleConnector:30 - Instantiating Oracle object...
+2021-03-10 15:00:04 main: [INFO] Dispatcher:44 - Submitted an span task.
+2021-03-10 15:00:04 main: [INFO] Main:18 - One turn executed.
+2021-03-10 15:00:04 pool-1-thread-2: [INFO] LoggingFileCleanUtil:17 - No old logging file exists, creating new at /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_20210310.log
+2021-03-10 15:00:04 pool-1-thread-2: [DEBUG] MonitorLogger:29 - Span logging: current hour = 15, start hour = 11, end hour = 11
+2021-03-10 15:00:22 main: [INFO] InitialPrison:16 - Minute = 0, second = 22, entering initial prison...
+2021-03-10 15:00:22 main: [INFO] InitialPrison:21 - Current minute = 0, second = 22
+2021-03-10 15:00:23 main: [INFO] InitialPrison:21 - Current minute = 0, second = 22
+2021-03-10 15:00:24 main: [INFO] InitialPrison:21 - Current minute = 0, second = 23
+2021-03-10 15:00:25 main: [INFO] InitialPrison:21 - Current minute = 0, second = 24
+2021-03-10 15:00:26 main: [INFO] InitialPrison:21 - Current minute = 0, second = 25
+2021-03-10 15:00:27 main: [INFO] InitialPrison:21 - Current minute = 0, second = 26
+2021-03-10 15:00:28 main: [INFO] InitialPrison:21 - Current minute = 0, second = 27
+2021-03-10 15:00:29 main: [INFO] InitialPrison:21 - Current minute = 0, second = 28
+2021-03-10 15:00:30 main: [INFO] InitialPrison:21 - Current minute = 0, second = 29
+2021-03-10 15:00:31 main: [INFO] InitialPrison:21 - Current minute = 0, second = 30
+2021-03-10 15:00:32 main: [INFO] InitialPrison:21 - Current minute = 0, second = 31
+2021-03-10 15:00:33 main: [INFO] InitialPrison:21 - Current minute = 0, second = 32
+2021-03-10 15:00:34 main: [INFO] InitialPrison:21 - Current minute = 0, second = 33
+2021-03-10 15:00:35 main: [INFO] InitialPrison:21 - Current minute = 0, second = 34
+2021-03-10 15:00:36 main: [INFO] InitialPrison:21 - Current minute = 0, second = 35
+2021-03-10 15:00:37 main: [INFO] InitialPrison:21 - Current minute = 0, second = 36
+2021-03-10 15:00:38 main: [INFO] InitialPrison:21 - Current minute = 0, second = 37
+2021-03-10 15:00:39 main: [INFO] InitialPrison:21 - Current minute = 0, second = 38
+2021-03-10 15:00:40 main: [INFO] InitialPrison:21 - Current minute = 0, second = 39
+2021-03-10 15:00:41 main: [INFO] InitialPrison:21 - Current minute = 0, second = 40
+2021-03-10 15:00:42 main: [INFO] InitialPrison:21 - Current minute = 0, second = 41
+2021-03-10 15:00:43 main: [INFO] InitialPrison:21 - Current minute = 0, second = 42
+2021-03-10 15:00:44 main: [INFO] InitialPrison:21 - Current minute = 0, second = 43
+2021-03-10 15:00:45 main: [INFO] InitialPrison:21 - Current minute = 0, second = 44
+2021-03-10 15:00:46 main: [INFO] InitialPrison:21 - Current minute = 0, second = 45
+2021-03-10 15:00:47 main: [INFO] InitialPrison:21 - Current minute = 0, second = 46
+2021-03-10 15:00:48 main: [INFO] InitialPrison:21 - Current minute = 0, second = 47
+2021-03-10 15:00:49 main: [INFO] InitialPrison:21 - Current minute = 0, second = 48
+2021-03-10 15:00:50 main: [INFO] InitialPrison:21 - Current minute = 0, second = 49
+2021-03-10 15:00:51 main: [INFO] InitialPrison:21 - Current minute = 0, second = 50
+2021-03-10 15:00:52 main: [INFO] InitialPrison:21 - Current minute = 0, second = 51
+2021-03-10 15:00:53 main: [INFO] InitialPrison:21 - Current minute = 0, second = 52
+2021-03-10 15:00:54 main: [INFO] InitialPrison:21 - Current minute = 0, second = 53
+2021-03-10 15:00:55 main: [INFO] InitialPrison:21 - Current minute = 0, second = 54
+2021-03-10 15:00:56 main: [INFO] InitialPrison:21 - Current minute = 0, second = 55
+2021-03-10 15:00:57 main: [INFO] InitialPrison:21 - Current minute = 0, second = 56
+2021-03-10 15:00:58 main: [INFO] InitialPrison:21 - Current minute = 0, second = 57
+2021-03-10 15:00:59 main: [INFO] InitialPrison:21 - Current minute = 0, second = 58
+2021-03-10 15:01:49 main: [INFO] InitialPrison:16 - Minute = 1, second = 49, entering initial prison...
+2021-03-10 15:10:01 main: [INFO] InitialPrison:21 - Current minute = 10, second = 0
+2021-03-10 15:20:01 main: [INFO] InitialPrison:21 - Current minute = 20, second = 0
+2021-03-10 15:56:53 main: [INFO] InitialPrison:16 - Minute = 56, second = 53, entering initial prison...
+2021-03-10 16:00:00 main: [INFO] InitialPrison:29 - Escaped from initial prison.
+2021-03-10 16:04:29 main: [INFO] InitialPrison:16 - Minute = 4, second = 29, entering initial prison...
+2021-03-10 16:04:41 main: [INFO] MySQLConnector:23 - Connecting MySQL database...
+2021-03-10 16:04:41 main: [DEBUG] MySQLConnector:24 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-03-10 16:04:41 main: [DEBUG] MySQLConnector:25 - USER = root
+2021-03-10 16:04:42 main: [INFO] MySQLConnector:29 - Instantiating MySQL object...
+2021-03-10 16:04:42 main: [INFO] Main:13 - MonitorControl starting...
+2021-03-10 16:04:42 main: [INFO] InitialPrison:16 - Minute = 4, second = 42, entering initial prison...
+2021-03-10 16:10:01 main: [INFO] InitialPrison:21 - Current minute = 10, second = 0
+2021-03-10 16:20:01 main: [INFO] InitialPrison:21 - Current minute = 20, second = 0
+2021-03-10 16:30:01 main: [INFO] InitialPrison:21 - Current minute = 30, second = 0
+2021-03-10 16:40:01 main: [INFO] InitialPrison:21 - Current minute = 40, second = 0
+2021-03-10 16:50:01 main: [INFO] InitialPrison:21 - Current minute = 50, second = 0
+2021-03-10 17:00:00 main: [INFO] InitialPrison:29 - Escaped from initial prison.
+2021-03-10 17:00:00 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-03-10 17:00:00 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 早上七点定点监控
+2021-03-10 17:00:00 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 七点至九点监控
+2021-03-10 17:00:00 main: [DEBUG] Dispatcher:28 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-03-10 17:00:00 main: [DEBUG] Dispatcher:35 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_7am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-03-10 17:00:00 main: [INFO] OracleConnector:24 - Connecting Oracle database...
+2021-03-10 17:00:00 main: [DEBUG] OracleConnector:25 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-03-10 17:00:00 main: [DEBUG] OracleConnector:26 - USER = system
+2021-03-10 17:00:00 main: [INFO] OracleConnector:30 - Instantiating Oracle object...
+2021-03-10 17:00:00 main: [INFO] Dispatcher:40 - Submitted an cron task.
+2021-03-10 17:00:00 pool-1-thread-1: [DEBUG] MonitorLogger:56 - Cron logging: current hour = 17, start hour = 11
+2021-03-10 17:00:00 main: [DEBUG] Dispatcher:35 - Executing scheduled task type = span, time span = 11:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-03-10 17:00:00 main: [INFO] OracleConnector:24 - Connecting Oracle database...
+2021-03-10 17:00:00 main: [DEBUG] OracleConnector:25 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-03-10 17:00:00 main: [DEBUG] OracleConnector:26 - USER = system
+2021-03-10 17:00:00 main: [INFO] OracleConnector:30 - Instantiating Oracle object...
+2021-03-10 17:00:00 main: [INFO] Dispatcher:44 - Submitted an span task.
+2021-03-10 17:00:00 main: [INFO] Main:18 - One turn executed.
+2021-03-10 17:00:00 pool-1-thread-2: [INFO] LoggingFileCleanUtil:17 - No old logging file exists, creating new at /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_20210310.log
+2021-03-10 17:00:00 pool-1-thread-2: [DEBUG] MonitorLogger:29 - Span logging: current hour = 17, start hour = 11, end hour = 11

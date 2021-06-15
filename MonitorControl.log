@@ -1,0 +1,140 @@
+2021-04-20 09:34:46 main: [INFO] MySQLConnector:23 - Connecting MySQL database...
+2021-04-20 09:34:46 main: [DEBUG] MySQLConnector:24 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-04-20 09:34:46 main: [DEBUG] MySQLConnector:25 - USER = root
+2021-04-20 09:34:47 main: [INFO] MySQLConnector:29 - Instantiating MySQL object...
+2021-04-20 09:34:47 main: [INFO] Main:13 - MonitorControl starting...
+2021-04-20 09:34:47 main: [INFO] TimePrison:16 - Minute = 34, second = 47, entering time prison...
+2021-04-20 09:40:01 main: [INFO] TimePrison:21 - Current minute = 40, second = 0
+2021-04-20 09:50:01 main: [INFO] TimePrison:21 - Current minute = 50, second = 0
+2021-04-20 10:00:00 main: [INFO] TimePrison:29 - Escaped from time prison.
+2021-04-20 10:00:00 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-04-20 10:00:00 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 早上七点定点监控
+2021-04-20 10:00:00 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 七点至九点监控
+2021-04-20 10:00:00 main: [DEBUG] Dispatcher:28 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-04-20 10:00:00 main: [DEBUG] Dispatcher:35 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_7am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-04-20 10:00:00 main: [INFO] OracleConnector:24 - Connecting Oracle database...
+2021-04-20 10:00:00 main: [DEBUG] OracleConnector:25 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-04-20 10:00:00 main: [DEBUG] OracleConnector:26 - USER = system
+2021-04-20 10:00:01 main: [INFO] Dispatcher:40 - Submitted an cron task.
+2021-04-20 10:00:01 pool-1-thread-1: [DEBUG] MonitorLogger:56 - Cron logging: current hour = 10, start hour = 11
+2021-04-20 10:00:01 main: [DEBUG] Dispatcher:35 - Executing scheduled task type = span, time span = 11:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-04-20 10:00:01 main: [INFO] OracleConnector:24 - Connecting Oracle database...
+2021-04-20 10:00:01 main: [DEBUG] OracleConnector:25 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-04-20 10:00:01 main: [DEBUG] OracleConnector:26 - USER = system
+2021-04-20 10:00:01 main: [INFO] Dispatcher:44 - Submitted an span task.
+2021-04-20 10:00:01 main: [INFO] Main:18 - One turn executed.
+2021-04-20 10:00:01 pool-1-thread-2: [INFO] LoggingFileCleanUtil:17 - No old logging file exists, creating new at /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_7pm_20210420.log
+2021-04-20 10:00:01 pool-1-thread-2: [DEBUG] MonitorLogger:29 - Span logging: current hour = 10, start hour = 11, end hour = 11
+2021-05-10 15:43:56 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-05-10 15:43:56 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-10 15:43:56 main: [DEBUG] OracleConnector:48 - USER = system
+2021-05-10 15:45:18 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-05-10 15:45:18 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-10 15:45:18 main: [DEBUG] OracleConnector:48 - USER = system
+2021-05-10 15:48:30 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-05-10 15:48:30 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-10 15:48:30 main: [DEBUG] OracleConnector:48 - USER = system
+2021-05-10 15:48:43 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-05-10 15:48:43 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-10 15:48:43 main: [DEBUG] OracleConnector:48 - USER = system
+2021-05-10 15:48:49 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-05-10 15:48:49 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-10 15:48:49 main: [DEBUG] OracleConnector:48 - USER = system
+2021-05-10 15:49:32 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-05-10 15:49:32 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-10 15:49:32 main: [DEBUG] OracleConnector:48 - USER = system
+2021-05-10 15:49:46 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-05-10 15:49:46 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-10 15:49:46 main: [DEBUG] OracleConnector:48 - USER = system
+2021-05-10 21:32:16 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-05-10 21:32:16 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-10 21:32:16 main: [DEBUG] OracleConnector:69 - USER = system
+2021-05-10 21:32:43 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-05-10 21:32:43 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-10 21:32:43 main: [DEBUG] OracleConnector:69 - USER = system
+2021-05-10 21:33:45 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-05-10 21:33:45 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-10 21:33:45 main: [DEBUG] OracleConnector:69 - USER = system
+2021-05-10 21:33:45 main: [DEBUG] OracleConnector:70 - Fetched result for query: select * from etl_job
+2021-05-10 21:34:01 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-05-10 21:34:01 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-10 21:34:01 main: [DEBUG] OracleConnector:48 - USER = system
+2021-05-10 21:34:01 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-05-10 21:34:01 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-05-10 21:34:01 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-05-10 21:34:01 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-10 21:34:01 main: [DEBUG] OracleConnector:69 - USER = system
+2021-05-10 21:34:01 main: [DEBUG] OracleConnector:70 - Fetched result for query: select * from etl_job
+2021-05-10 21:34:01 main: [DEBUG] OracleConnector:94 - Oracle connection closed.
+2021-05-10 21:34:16 main: [INFO] Main:13 - MonitorControl starting...
+2021-05-10 21:34:16 main: [INFO] TimePrison:16 - Minute = 34, second = 16, entering time prison...
+2021-05-11 13:18:43 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-05-11 13:18:43 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-11 13:18:43 main: [DEBUG] OracleConnector:48 - USER = system
+2021-05-11 13:18:44 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-05-11 13:18:44 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-05-11 13:18:44 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-05-11 13:18:44 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-11 13:18:44 main: [DEBUG] OracleConnector:69 - USER = system
+2021-05-11 13:18:44 main: [DEBUG] OracleConnector:70 - Fetched result for query: select * from etl_job
+2021-05-11 13:19:03 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-05-11 13:19:03 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-11 13:19:03 main: [DEBUG] OracleConnector:48 - USER = system
+2021-05-11 13:19:04 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-05-11 13:19:04 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-05-11 13:19:04 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-05-11 13:19:04 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-11 13:19:04 main: [DEBUG] OracleConnector:69 - USER = system
+2021-05-11 13:19:04 main: [DEBUG] OracleConnector:70 - Fetched result for query: select * from etl_job
+2021-05-11 13:19:23 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-05-11 13:19:23 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-11 13:19:23 main: [DEBUG] OracleConnector:48 - USER = system
+2021-05-11 13:19:23 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-05-11 13:19:23 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-05-11 13:19:23 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-05-11 13:19:23 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-11 13:19:23 main: [DEBUG] OracleConnector:69 - USER = system
+2021-05-11 13:19:23 main: [DEBUG] OracleConnector:70 - Fetched result for query: select * from etl_job
+2021-05-11 13:19:55 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-05-11 13:19:55 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-11 13:19:55 main: [DEBUG] OracleConnector:48 - USER = system
+2021-05-11 13:19:56 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-05-11 13:19:56 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-05-11 13:19:56 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-05-11 13:19:56 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-11 13:19:56 main: [DEBUG] OracleConnector:69 - USER = system
+2021-05-11 13:19:56 main: [DEBUG] OracleConnector:70 - Fetched result for query: select * from etl_job
+2021-05-11 13:20:27 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-05-11 13:20:27 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-11 13:20:27 main: [DEBUG] OracleConnector:48 - USER = system
+2021-05-11 13:20:27 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-05-11 13:20:27 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-05-11 13:20:27 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-05-11 13:20:27 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-11 13:20:27 main: [DEBUG] OracleConnector:69 - USER = system
+2021-05-11 13:20:27 main: [DEBUG] OracleConnector:70 - Fetched result for query: select * from etl_job
+2021-05-11 13:20:37 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-05-11 13:20:37 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-11 13:20:37 main: [DEBUG] OracleConnector:48 - USER = system
+2021-05-11 13:20:37 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-05-11 13:20:37 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-05-11 13:20:37 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-05-11 13:20:38 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-11 13:20:38 main: [DEBUG] OracleConnector:69 - USER = system
+2021-05-11 13:20:38 main: [DEBUG] OracleConnector:70 - Fetched result for query: select * from etl_job
+2021-05-11 13:20:39 main: [DEBUG] OracleConnector:94 - Oracle connection closed.
+2021-05-11 13:23:12 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-05-11 13:23:12 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-11 13:23:12 main: [DEBUG] OracleConnector:48 - USER = system
+2021-05-11 13:23:12 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-05-11 13:23:13 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-05-11 13:23:13 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-05-11 13:23:13 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-05-11 13:23:13 main: [DEBUG] OracleConnector:69 - USER = system
+2021-05-11 13:23:13 main: [DEBUG] OracleConnector:70 - Fetched result for query: select * from etl_job
+2021-05-11 13:23:14 main: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-05-13 10:06:15 main: [DEBUG] SendMailUtil:28 - 
+2021-05-13 10:09:21 main: [DEBUG] SendMailUtil:28 - 
+2021-05-13 10:36:10 main: [DEBUG] SendMailUtil:28 - 
+2021-05-13 10:38:15 main: [DEBUG] SendMailUtil:28 - Parameters loaded: mail.smtp.host=smtp.qq.commail.smtp.port=46, hostUser=97257385@qq.com
+2021-05-13 10:39:25 main: [DEBUG] SendMailUtil:28 - Parameters loaded: mail.smtp.host=smtp.qq.com, mail.smtp.port=587, hostUser=97257385@qq.com
