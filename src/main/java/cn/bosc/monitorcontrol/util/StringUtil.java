@@ -45,10 +45,15 @@ public class StringUtil {
                     StringUtil.jobNameJoin(jobList).toUpperCase() +
                     ") AND LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')";
         } else {
-            return QuerySQL.ETL_JOB_QUERY_BASE +
-                    " " + whereClause.toUpperCase() +
-                    " AND ETL_JOB IN (" +
-                    StringUtil.jobNameJoin(jobList).toUpperCase() + ")";
+            if (jobList.size() == 0) {
+                return QuerySQL.ETL_JOB_QUERY_BASE +
+                        " " + whereClause.toUpperCase();
+            } else {
+                return QuerySQL.ETL_JOB_QUERY_BASE +
+                        " " + whereClause.toUpperCase() +
+                        " AND ETL_JOB IN (" +
+                        StringUtil.jobNameJoin(jobList).toUpperCase() + ")";
+            }
         }
     }
 
@@ -58,7 +63,7 @@ public class StringUtil {
                 QuerySQL.ETL_JOB_QUERY_BASE +
                 " WHERE ETL_JOB in (" +
                 StringUtil.jobNameJoin(jobList).toUpperCase() +
-                ") ORDER BY LAST_TXDATE DESC";
+                ") ORDER BY LAST_TXDATE DESC\n";
 
     }
 }

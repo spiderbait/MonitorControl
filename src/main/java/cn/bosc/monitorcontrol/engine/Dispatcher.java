@@ -24,38 +24,46 @@ public class Dispatcher {
 
     public void dispatch() {
 
-        this.parser.parse();
-        List<cn.bosc.monitorcontrol.entity.List> lists = parser.getLists();
-        HashMap<Integer, List<Rule>> ruleMap = parser.getRuleMap();
-        for (cn.bosc.monitorcontrol.entity.List list: lists) {
+        try {
+            this.parser.parse();
+            List<cn.bosc.monitorcontrol.entity.List> lists = parser.getLists();
+            HashMap<Integer, List<Rule>> ruleMap = parser.getRuleMap();
+            for (cn.bosc.monitorcontrol.entity.List list : lists) {
                 logger.debug("Executing scheduled task mid = " + list.getMid() + ", dispatch name = " + list.getName());
                 //TODO: add ifnull for list.getMid()
-                for (Rule rule: ruleMap.get(list.getMid())) {
+                for (Rule rule : ruleMap.get(list.getMid())) {
+                    String name = rule.getName();
                     String type = rule.getType();
                     String span = rule.getSpan();
                     String path = rule.getPath();
                     String endKeyword = rule.getEndKeyword();
                     List<String> jobList = rule.getJobList();
                     String whereClause = rule.getWhereClause();
+                    String[] receivers = rule.getReceivers();
+                    String title = list.getName() + " - " + name;
                     logger.debug("Executing scheduled task type = " + type + ", time span = " + span
                             + ", output path = " + path + ", where clause = " + whereClause);
-                    switch(type.toLowerCase()) {
+                    switch (type.toLowerCase()) {
                         case "cron":
-                            executor.execute(new CronTaskLauncher(whereClause, span, path, jobList, endKeyword));
+                            executor.execute(new CronTaskLauncher(title, receivers, whereClause, span, path, jobList, endKeyword));
                             logger.info("Submitted an cron task.");
                             break;
                         case "span":
-                            executor.execute(new SpanTaskLauncher(whereClause, span, path, jobList, endKeyword));
+                            executor.execute(new SpanTaskLauncher(title, receivers, whereClause, span, path, jobList, endKeyword));
                             logger.info("Submitted an span task.");
                             break;
                         default:
                             logger.error("TYPE ERROR!");
                             //ERROR
                             break;
-                }
+                    }
                     logger.debug("Thread number in thread pool: " + executor.getPoolSize() + ", task number waited in queue：" +
                             executor.getQueue().size() + ", completed task count: " + executor.getCompletedTaskCount());
+                }
             }
+        } catch (NullPointerException e) {
+            logger.warn("No rules found for this entity, continue.");
+
         }
     }
 }

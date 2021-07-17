@@ -3,6 +3,7 @@ package cn.bosc.monitorcontrol.engine;
 import cn.bosc.monitorcontrol.constant.Constant;
 import cn.bosc.monitorcontrol.dao.BatchInfoFetcher;
 import cn.bosc.monitorcontrol.util.LoggingFileCleanUtil;
+import cn.bosc.monitorcontrol.util.SendMailUtil;
 import cn.bosc.monitorcontrol.util.StringUtil;
 import cn.bosc.monitorcontrol.util.TimestampUtil;
 import org.slf4j.Logger;
@@ -18,7 +19,7 @@ public class MonitorLogger {
     BatchInfoFetcher bif = new BatchInfoFetcher();
     Logger logger = LoggerFactory.getLogger(MonitorLogger.class);
 
-    public void spanLogging(String whereClause, String span, String path, List<String> jobList, String endKeyword) {
+    public void spanLogging(String title, String[] receivers, String whereClause, String span, String path, List<String> jobList, String endKeyword) {
         try {
 
             int startHour = Integer.parseInt(span.split("->")[0].trim().split(":")[0]);
@@ -41,6 +42,7 @@ public class MonitorLogger {
                     Thread.sleep(Constant.SPAN_DELAY_IN_MS);
                     if (Calendar.getInstance().get(Calendar.HOUR_OF_DAY) == endHour) {
                         out.write(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT) + " " + endKeyword + "\n");
+                        SendMailUtil.sendMail(receivers, title, out.toString());
                         out.close();
                         break;
                     }
@@ -51,7 +53,7 @@ public class MonitorLogger {
         }
     }
 
-    public void cronLogging(String whereClause, String span, String path, List<String> jobList, String endKeyword) {
+    public void cronLogging(String title, String[] receivers, String whereClause, String span, String path, List<String> jobList, String endKeyword) {
         try {
             int startHour = Integer.parseInt(span.split(":")[0]);
             logger.debug("Cron logging: current hour = " + Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
@@ -69,11 +71,17 @@ public class MonitorLogger {
                 String probe = StringUtil.getProbeQueryString(jobList);
                 out.write(probe);
                 out.flush();
+                SendMailUtil.sendMail(receivers, title, out.toString());
                 out.close();
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public static void main(String[] args) {
+        MonitorLogger ml = new MonitorLogger();
+
     }
 
 }

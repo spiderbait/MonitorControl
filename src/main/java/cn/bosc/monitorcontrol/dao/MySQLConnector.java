@@ -4,9 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+
 
 public class MySQLConnector {
     static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";

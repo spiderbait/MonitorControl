@@ -16,6 +16,7 @@ public class Main {
             while (true) {
                 dispatcher.dispatch();
                 logger.info("One turn executed.");
+
                 Thread.sleep(Constant.DISPATCH_INTERVAL_IN_MS);
             }
         } catch (InterruptedException e) {

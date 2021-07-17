@@ -21,9 +21,9 @@ public class BatchInfoFetcher {
 
     public String getBatchInfo(String whereClause, List<String> jobList) throws SQLException{
 
-        if (jobList.size() == 0 || !StringUtil.validateWhereClause(whereClause)) {
-            return "监控作业清单或where语句配置有误，请检查。";
-        }
+//        if (jobList.size() == 0 || !StringUtil.validateWhereClause(whereClause)) {
+//            return "监控作业清单或where语句配置有误，请检查。";
+//        }
 
         StringBuilder sb = new StringBuilder();
         OracleConnector oc = new OracleConnector();

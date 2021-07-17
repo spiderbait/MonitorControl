@@ -138,3 +138,219 @@
 2021-05-13 10:36:10 main: [DEBUG] SendMailUtil:28 - 
 2021-05-13 10:38:15 main: [DEBUG] SendMailUtil:28 - Parameters loaded: mail.smtp.host=smtp.qq.commail.smtp.port=46, hostUser=97257385@qq.com
 2021-05-13 10:39:25 main: [DEBUG] SendMailUtil:28 - Parameters loaded: mail.smtp.host=smtp.qq.com, mail.smtp.port=587, hostUser=97257385@qq.com
+2021-07-15 15:09:39 main: [INFO] LoggingFileCleanUtil:14 - Old logging file exists, creating new at /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/test_log
+2021-07-15 15:09:39 main: [DEBUG] MonitorLoggerTest:28 - Span logging: current hour = 15, start hour = 15, end hour = 17, end keyword = END
+2021-07-15 15:09:40 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-15 15:09:40 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:09:40 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-15 15:09:40 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-15 15:09:40 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-15 15:09:40 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-15 15:09:40 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:09:40 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-15 15:09:40 main: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE AND ETL_JOB IN ('S04_ACCOUNT',
+'S00_TREE',
+'S99_BOS_PERSON')
+2021-07-15 15:10:39 main: [INFO] LoggingFileCleanUtil:14 - Old logging file exists, creating new at /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/test_log
+2021-07-15 15:10:39 main: [DEBUG] MonitorLoggerTest:28 - Span logging: current hour = 15, start hour = 15, end hour = 17, end keyword = END
+2021-07-15 15:10:39 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-15 15:10:39 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:10:39 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-15 15:10:40 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-15 15:10:40 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-15 15:10:40 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-15 15:10:40 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:10:40 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-15 15:10:40 main: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE 1=1 AND ETL_JOB IN ('S04_ACCOUNT',
+'S00_TREE',
+'S99_BOS_PERSON')
+2021-07-15 15:10:40 main: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-15 15:15:40 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-15 15:15:40 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:15:40 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-15 15:15:40 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-15 15:15:40 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-15 15:15:40 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-15 15:15:40 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:15:40 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-15 15:15:40 main: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE 1=1 AND ETL_JOB IN ('S04_ACCOUNT',
+'S00_TREE',
+'S99_BOS_PERSON')
+2021-07-15 15:15:40 main: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-15 15:20:40 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-15 15:20:40 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:20:40 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-15 15:20:40 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-15 15:20:40 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-15 15:20:40 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-15 15:20:40 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:20:40 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-15 15:20:40 main: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE 1=1 AND ETL_JOB IN ('S04_ACCOUNT',
+'S00_TREE',
+'S99_BOS_PERSON')
+2021-07-15 15:20:40 main: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-15 15:29:01 main: [INFO] LoggingFileCleanUtil:17 - No old logging file exists, creating new at /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/test_log/EDW_MONITOR_20210715.log
+2021-07-15 15:29:01 main: [DEBUG] MonitorLoggerTest:28 - Span logging: current hour = 15, start hour = 15, end hour = 16, end keyword = END
+2021-07-15 15:29:01 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-15 15:29:01 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:29:01 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-15 15:29:01 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-15 15:29:01 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-15 15:29:01 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-15 15:29:01 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:29:01 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-15 15:29:01 main: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE 1=1 AND ETL_JOB IN ('S04_ACCOUNT',
+'S00_TREE',
+'S99_BOS_PERSON')
+2021-07-15 15:29:02 main: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-15 15:34:02 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-15 15:34:02 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:34:02 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-15 15:34:02 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-15 15:34:02 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-15 15:34:02 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-15 15:34:02 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:34:02 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-15 15:34:02 main: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE 1=1 AND ETL_JOB IN ('S04_ACCOUNT',
+'S00_TREE',
+'S99_BOS_PERSON')
+2021-07-15 15:34:02 main: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-15 15:39:02 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-15 15:39:02 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:39:02 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-15 15:39:02 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-15 15:39:02 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-15 15:39:02 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-15 15:39:02 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:39:02 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-15 15:39:02 main: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE 1=1 AND ETL_JOB IN ('S04_ACCOUNT',
+'S00_TREE',
+'S99_BOS_PERSON')
+2021-07-15 15:39:02 main: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-15 15:44:02 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-15 15:44:02 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:44:02 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-15 15:44:02 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-15 15:44:02 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-15 15:44:02 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-15 15:44:02 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:44:02 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-15 15:44:02 main: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE 1=1 AND ETL_JOB IN ('S04_ACCOUNT',
+'S00_TREE',
+'S99_BOS_PERSON')
+2021-07-15 15:44:02 main: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-15 15:49:02 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-15 15:49:02 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:49:02 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-15 15:49:02 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-15 15:49:02 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-15 15:49:02 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-15 15:49:02 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:49:02 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-15 15:49:02 main: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE 1=1 AND ETL_JOB IN ('S04_ACCOUNT',
+'S00_TREE',
+'S99_BOS_PERSON')
+2021-07-15 15:49:02 main: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-15 15:54:02 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-15 15:54:02 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:54:02 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-15 15:54:03 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-15 15:54:03 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-15 15:54:03 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-15 15:54:03 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:54:03 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-15 15:54:03 main: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE 1=1 AND ETL_JOB IN ('S04_ACCOUNT',
+'S00_TREE',
+'S99_BOS_PERSON')
+2021-07-15 15:54:03 main: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-15 15:59:03 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-15 15:59:03 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:59:03 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-15 15:59:03 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-15 15:59:03 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-15 15:59:03 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-15 15:59:03 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 15:59:03 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-15 15:59:03 main: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE 1=1 AND ETL_JOB IN ('S04_ACCOUNT',
+'S00_TREE',
+'S99_BOS_PERSON')
+2021-07-15 15:59:03 main: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-15 22:00:46 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-15 22:00:46 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 22:00:46 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-15 22:00:46 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-15 22:00:46 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-15 22:00:46 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-15 22:00:47 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 22:00:47 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-15 22:00:47 main: [DEBUG] OracleConnector:70 - Fetched result for query: select * from etl_job
+2021-07-15 22:00:48 main: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-15 22:07:26 main: [INFO] OracleConnector:68 - Connecting Oracle database...
+2021-07-15 22:07:26 main: [DEBUG] OracleConnector:69 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 22:07:26 main: [DEBUG] OracleConnector:70 - USER = system
+2021-07-15 22:07:26 main: [INFO] OracleConnector:72 - Connecting Oracle database...
+2021-07-15 22:07:26 main: [DEBUG] OracleConnector:73 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 22:07:26 main: [DEBUG] OracleConnector:74 - USER = system
+2021-07-15 22:07:26 main: [DEBUG] OracleConnector:75 - Fetched result for query: select * from etl_job
+2021-07-15 22:14:19 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-15 22:14:19 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 22:14:19 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-15 22:14:19 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-15 22:14:19 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-15 22:14:19 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-15 22:14:19 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 22:14:19 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-15 22:14:19 main: [DEBUG] OracleConnector:70 - Fetched result for query: select * from etl_job
+2021-07-15 22:14:21 main: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-15 22:15:29 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-15 22:15:29 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 22:15:29 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-15 22:15:29 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-15 22:15:29 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-15 22:15:29 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-15 22:15:29 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 22:15:29 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-15 22:15:29 main: [DEBUG] OracleConnector:70 - Fetched result for query: select * from etl_job where etl_job='S04_ACCOUNT'
+2021-07-15 22:15:29 main: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-15 22:16:37 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-15 22:16:37 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 22:16:37 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-15 22:16:38 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-15 22:16:38 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-15 22:16:38 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-15 22:16:38 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 22:16:38 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-15 22:16:38 main: [DEBUG] OracleConnector:70 - Fetched result for query: select * from etl_job where etl_job='S04_ACCOUNT'
+2021-07-15 22:16:38 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-15 22:16:38 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-15 22:16:38 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-15 22:16:38 main: [DEBUG] OracleConnector:70 - Fetched result for query: select * from etl_job where etl_job='S00_TREE'
+2021-07-15 22:16:38 main: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-15 22:31:20 main: [INFO] DBConnector:25 - MySQL parameters loaded.
+2021-07-15 22:31:20 main: [INFO] DBConnector:45 - JDBC DRIVER: com.mysql.jdbc.Driver
+2021-07-15 22:31:20 main: [INFO] DBConnector:47 - 连接MySQL数据库...
+2021-07-15 22:32:49 main: [INFO] DBConnector:33 - Oracle parameters loaded.
+2021-07-15 22:32:49 main: [INFO] DBConnector:45 - JDBC DRIVER: oracle.jdbc.driver.OracleDriver
+2021-07-15 22:32:49 main: [INFO] DBConnector:47 - 连接Oracle数据库...
+2021-07-15 22:32:50 main: [INFO] DBConnector:51 - 实例化Oracle对象...
+2021-07-15 22:33:02 main: [INFO] DBConnector:33 - Oracle parameters loaded.
+2021-07-15 22:33:02 main: [INFO] DBConnector:45 - JDBC DRIVER: oracle.jdbc.driver.OracleDriver
+2021-07-15 22:33:02 main: [INFO] DBConnector:47 - 连接Oracle数据库...
+2021-07-15 22:33:02 main: [INFO] DBConnector:51 - 实例化Oracle对象...
+2021-07-15 22:39:41 main: [INFO] Main:13 - MonitorControl starting...
+2021-07-15 22:39:41 main: [INFO] TimePrison:16 - Minute = 39, second = 41, entering time prison...
+2021-07-17 17:39:34 main: [INFO] ConnectionGuard:14 - Pid = 64189
+2021-07-17 17:44:41 main: [INFO] ConnectionGuard:18 - Pid = 64293
+2021-07-17 17:46:17 main: [INFO] ConnectionGuard:20 - Executed command = netstat -anp | grep -v grep | grep 64333
+2021-07-17 17:46:46 main: [INFO] ConnectionGuard:20 - Executed command = netstat -anp | grep -v grep | grep 64342 wc -l
+2021-07-17 17:47:03 main: [INFO] ConnectionGuard:20 - Executed command = netstat -anp | grep -v grep | grep 64351 | wc -l
+2021-07-17 17:55:20 main: [INFO] ConnectionGuard:22 - Executed command = sh -c netstat -an | grep -v grep | grep 64543 | wc -l
+2021-07-17 17:56:43 main: [INFO] ConnectionGuard:34 - STDOUT = java.lang.UNIXProcess$ProcessPipeOutputStream@504bae78
+2021-07-17 17:56:43 main: [INFO] ConnectionGuard:35 - ERROUT = java.lang.UNIXProcess$ProcessPipeInputStream@45fe3ee3
+2021-07-17 17:56:43 main: [INFO] ConnectionGuard:22 - Executed command = sh -c netstat -an | grep -v grep | grep 64568 | wc -l
+2021-07-17 17:57:02 main: [INFO] ConnectionGuard:34 - STDOUT = java.lang.UNIXProcess$ProcessPipeOutputStream@504bae78
+2021-07-17 17:57:02 main: [INFO] ConnectionGuard:35 - ERROUT = java.lang.UNIXProcess$ProcessPipeInputStream@45fe3ee3
+2021-07-17 17:57:02 main: [INFO] ConnectionGuard:22 - Executed command = sh -c netstat -an | grep -v grep | grep 64580 | wc -l
+2021-07-17 18:02:49 main: [INFO] ConnectionGuard:33 - STDOUT = 
+2021-07-17 18:02:49 main: [INFO] ConnectionGuard:34 - ERROUT = java.lang.UNIXProcess$ProcessPipeInputStream@484b61fc
+2021-07-17 18:02:49 main: [INFO] ConnectionGuard:19 - Executed command = sh -c netstat -an | grep -v grep | grep 64689 | wc -l

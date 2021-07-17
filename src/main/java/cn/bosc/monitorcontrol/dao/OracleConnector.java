@@ -97,9 +97,13 @@ public class OracleConnector {
 
         OracleConnector oc = new OracleConnector();
         oc.getConnection();
-        ResultSet rs = oc.execQuery("select * from etl_job");
+        ResultSet rs = oc.execQuery("select * from etl_job where etl_job='S04_ACCOUNT'");
         while(rs.next()) {
             System.out.println(rs.getString("etl_job"));
+        }
+        ResultSet rss = oc.execQuery("select * from etl_job where etl_job='S00_TREE'");
+        while(rss.next()) {
+            System.out.println(rss.getString("etl_job"));
         }
         oc.closeConnection();
 

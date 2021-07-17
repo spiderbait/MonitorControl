@@ -12,17 +12,21 @@ public class CronTaskLauncher implements Runnable{
     String whereClause;
     String endKeyword;
     MonitorLogger ml = new MonitorLogger();
+    String title;
+    String[] receivers;
 
-    public CronTaskLauncher(String whereClause, String span, String path, List<String> jobList, String endKeyword) {
+    public CronTaskLauncher(String title, String[] receivers, String whereClause, String span, String path, List<String> jobList, String endKeyword) {
         this.whereClause = whereClause;
         this.span = span;
         this.path = path;
         this.jobList = jobList;
         this.endKeyword = endKeyword;
+        this.title = title;
+        this.receivers = receivers;
     }
 
     @Override
     public void run() {
-        ml.cronLogging(this.whereClause, this.span, this.path, this.jobList, this.endKeyword);
+        ml.cronLogging(this.title, this.receivers, this.whereClause, this.span, this.path, this.jobList, this.endKeyword);
     }
 }

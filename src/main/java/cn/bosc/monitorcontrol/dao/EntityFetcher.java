@@ -54,6 +54,7 @@ public class EntityFetcher {
             row.setJobList(rs.getString("job_list"));
             row.setWhereClause(rs.getString("where_clause"));
             row.setEndKeyword(rs.getString("end_keyword"));
+            row.setReceivers(rs.getString("receivers"));
             result.add(row);
         }
         connector.closeConnection();

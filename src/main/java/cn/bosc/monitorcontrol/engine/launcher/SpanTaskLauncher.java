@@ -6,6 +6,8 @@ import java.util.List;
 
 public class SpanTaskLauncher implements Runnable{
 
+    String title;
+    String[] receivers;
     String span;
     String path;
     List<String> jobList;
@@ -13,7 +15,7 @@ public class SpanTaskLauncher implements Runnable{
     String endKeyword;
     MonitorLogger ml = new MonitorLogger();
 
-    public SpanTaskLauncher(String whereClause, String span, String path, List<String> jobList, String endKeyword) {
+    public SpanTaskLauncher(String title, String[] receivers, String whereClause, String span, String path, List<String> jobList, String endKeyword) {
         this.whereClause = whereClause;
         this.span = span;
         this.path = path;
@@ -23,6 +25,6 @@ public class SpanTaskLauncher implements Runnable{
 
     @Override
     public void run() {
-        ml.spanLogging(this.whereClause, this.span, this.path, this.jobList, this.endKeyword);
+        ml.spanLogging(this.title, this.receivers, this.whereClause, this.span, this.path, this.jobList, this.endKeyword);
     }
 }

@@ -14,6 +14,15 @@ public class Rule {
     List<String> jobList;
     String whereClause;
     String endKeyword;
+    String[] receivers;
+
+    public String[] getReceivers() {
+        return receivers;
+    }
+
+    public void setReceivers(String receivers) {
+        this.receivers = receivers.replace(" ", "").split(",");
+    }
 
     public void setEndKeyword(String endKeyword) {
         this.endKeyword = endKeyword;
