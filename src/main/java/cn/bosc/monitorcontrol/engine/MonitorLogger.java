@@ -32,17 +32,22 @@ public class MonitorLogger {
                     + ", end hour = " + endHour
                     + ", end keyword = " + endKeyword);
             if (Calendar.getInstance().get(Calendar.HOUR_OF_DAY) == startHour) {
+                StringBuilder sb = new StringBuilder();
                 BufferedWriter out = new BufferedWriter(
                         new OutputStreamWriter(
                                 new FileOutputStream(truePath, true)));
                 out.write(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT) + " START\n");
+                sb.append(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT)).append(" START\n");
                 while (true) {
                     out.write(bif.getBatchInfo(whereClause, jobList));
+                    sb.append(bif.getBatchInfo(whereClause, jobList));
                     out.flush();
                     Thread.sleep(Constant.SPAN_DELAY_IN_MS);
                     if (Calendar.getInstance().get(Calendar.HOUR_OF_DAY) == endHour) {
                         out.write(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT) + " " + endKeyword + "\n");
-                        SendMailUtil.sendMail(receivers, title, out.toString());
+                        sb.append(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT)).append(" ").append(endKeyword).append("\n");
+                        SendMailUtil.sendMail(receivers, title, sb.toString());
+                        out.flush();
                         out.close();
                         break;
                     }
@@ -64,24 +69,25 @@ public class MonitorLogger {
                         TimestampUtil.getNowTimestampString(Constant.PATH_FILENAME_FORMAT));
                 LoggingFileCleanUtil.clean(truePath);
                 BufferedWriter out = new BufferedWriter(new FileWriter(truePath));
+                StringBuilder sb = new StringBuilder();
                 out.write(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT) + " START\n");
+                sb.append(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT)).append(" START\n");
                 String msg = bif.getBatchInfo(whereClause, jobList);
                 out.write(msg);
+                sb.append(msg);
                 out.write(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT) + " " + endKeyword + "\n");
+                sb.append(TimestampUtil.getNowTimestampString(Constant.LOG_TS_FORMAT)).append(" ").append(endKeyword).append("\n");
                 String probe = StringUtil.getProbeQueryString(jobList);
                 out.write(probe);
+                sb.append(probe);
+//                out.write(sb.toString());
                 out.flush();
-                SendMailUtil.sendMail(receivers, title, out.toString());
+                SendMailUtil.sendMail(receivers, title, sb.toString());
                 out.close();
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    public static void main(String[] args) {
-        MonitorLogger ml = new MonitorLogger();
-
     }
 
 }

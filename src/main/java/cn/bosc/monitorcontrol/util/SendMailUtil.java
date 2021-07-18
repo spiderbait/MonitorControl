@@ -18,7 +18,7 @@ public class SendMailUtil {
 
     public static void sendMail(String[] receivers, String subject, String content) throws MessagingException {
         Properties properties = System.getProperties();
-
+        logger.info("SendMail parameters: host = " + host + ", port = " + hostPort + ", user = " + hostUser);
         properties.setProperty("mail.smtp.host", host);
         properties.setProperty("mail.smtp.port", hostPort);
         properties.setProperty("mail.smtp.auth", "true");
@@ -48,11 +48,16 @@ public class SendMailUtil {
 
         Transport.send(message);
     }
+
+    public static void printParameters() {
+        System.out.println("host = " + host + ", port = " + hostPort + ", user = " + hostUser + ", password = " + hostPassword);
+    }
     public static void main(String[] args) throws MessagingException {
 
         String[] receivers = {"97257385@qq.com", "tianzhuo_sd@163.com"};
         String content = "THIS IS A SENDMAIL TEST MAIL\nCHANGE LINE TEST!";
         SendMailUtil.sendMail(receivers, "SENDMAILTEST", content);
+//        SendMailUtil.printParameters();
 
     }
 

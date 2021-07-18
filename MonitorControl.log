@@ -354,3 +354,4 @@
 2021-07-17 18:02:49 main: [INFO] ConnectionGuard:33 - STDOUT = 
 2021-07-17 18:02:49 main: [INFO] ConnectionGuard:34 - ERROUT = java.lang.UNIXProcess$ProcessPipeInputStream@484b61fc
 2021-07-17 18:02:49 main: [INFO] ConnectionGuard:19 - Executed command = sh -c netstat -an | grep -v grep | grep 64689 | wc -l
+2021-07-18 11:27:42 main: [INFO] SendMailUtil:21 - SendMail parameters: host = smtp.qq.com, port = null, user = 97257385@qq.com
