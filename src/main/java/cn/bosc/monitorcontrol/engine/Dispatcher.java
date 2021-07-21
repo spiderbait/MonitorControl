@@ -20,7 +20,7 @@ public class Dispatcher {
 //    ExecutorService executorService = Executors.newFixedThreadPool(Constant.MAX_THREAD_POOL_SIZE);
 
     ThreadPoolExecutor executor = new ThreadPoolExecutor(5, 10, 10, TimeUnit.MILLISECONDS,
-            new ArrayBlockingQueue<Runnable>(5), new ThreadPoolExecutor.CallerRunsPolicy());
+            new ArrayBlockingQueue<Runnable>(10), new ThreadPoolExecutor.CallerRunsPolicy());
 
     public void dispatch() {
 
