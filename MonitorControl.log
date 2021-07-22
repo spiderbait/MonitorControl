@@ -355,3 +355,979 @@
 2021-07-17 18:02:49 main: [INFO] ConnectionGuard:34 - ERROUT = java.lang.UNIXProcess$ProcessPipeInputStream@484b61fc
 2021-07-17 18:02:49 main: [INFO] ConnectionGuard:19 - Executed command = sh -c netstat -an | grep -v grep | grep 64689 | wc -l
 2021-07-18 11:27:42 main: [INFO] SendMailUtil:21 - SendMail parameters: host = smtp.qq.com, port = null, user = 97257385@qq.com
+2021-07-21 08:45:24 main: [INFO] Main:13 - MonitorControl starting...
+2021-07-21 08:45:24 main: [INFO] TimePrison:16 - Minute = 45, second = 24, entering time prison...
+2021-07-21 08:50:01 main: [INFO] TimePrison:21 - Current minute = 50, second = 0
+2021-07-21 09:00:00 main: [INFO] TimePrison:29 - Escaped from time prison.
+2021-07-21 09:00:00 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:00:00 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:00:00 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:00:01 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:00:01 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:00:01 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 09:00:01 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 09:00:01 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 09:00:01 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:00:01 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:00:01 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:00:01 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:00:01 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:00:01 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 09:00:01 main: [WARN] Dispatcher:65 - No rules found for this entity, continue.
+2021-07-21 09:00:01 main: [INFO] Main:18 - One turn executed.
+2021-07-21 09:06:59 main: [INFO] Main:13 - MonitorControl starting...
+2021-07-21 09:06:59 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:06:59 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:06:59 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:06:59 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:06:59 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:06:59 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 09:06:59 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 09:06:59 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 09:06:59 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:06:59 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:06:59 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:06:59 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:06:59 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:06:59 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 09:06:59 main: [WARN] Dispatcher:65 - No rules found for this entity, continue.
+2021-07-21 09:06:59 main: [INFO] Main:18 - One turn executed.
+2021-07-21 09:12:57 main: [INFO] Main:13 - MonitorControl starting...
+2021-07-21 09:12:57 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:12:57 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:12:57 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:12:58 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:12:58 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:12:58 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 09:12:58 main: [DEBUG] EntityFetcher:28 - Get list query executed.
+2021-07-21 09:12:58 main: [DEBUG] EntityFetcher:35 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-21 09:12:58 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 09:12:58 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 09:12:58 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:12:58 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:12:58 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:12:58 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:12:58 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:12:58 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 09:12:58 main: [WARN] Dispatcher:65 - No rules found for this entity, continue.
+2021-07-21 09:12:58 main: [INFO] Main:18 - One turn executed.
+2021-07-21 09:29:33 main: [INFO] Main:13 - MonitorControl starting...
+2021-07-21 09:29:33 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:29:33 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:29:33 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:29:34 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:29:34 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:29:34 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 09:29:34 main: [DEBUG] EntityFetcher:28 - Get list query executed.
+2021-07-21 09:29:34 main: [DEBUG] EntityFetcher:35 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-21 09:29:34 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 09:29:34 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 09:29:34 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:29:34 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:29:34 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:29:34 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:29:34 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:29:34 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 09:29:34 main: [DEBUG] EntityFetcher:48 - Get rule query executed.
+2021-07-21 09:29:34 main: [WARN] Dispatcher:65 - No rules found for this entity, continue.
+2021-07-21 09:29:34 main: [INFO] Main:18 - One turn executed.
+2021-07-21 09:34:03 main: [INFO] DBConnector:25 - MySQL parameters loaded.
+2021-07-21 09:34:03 main: [INFO] DBConnector:45 - JDBC DRIVER: com.mysql.jdbc.Driver
+2021-07-21 09:34:03 main: [INFO] DBConnector:47 - 连接MySQL数据库...
+2021-07-21 09:34:04 main: [INFO] DBConnector:51 - 实例化MySQL对象...
+2021-07-21 09:34:18 main: [INFO] DBConnector:25 - MySQL parameters loaded.
+2021-07-21 09:34:18 main: [INFO] DBConnector:45 - JDBC DRIVER: com.mysql.jdbc.Driver
+2021-07-21 09:34:18 main: [INFO] DBConnector:47 - 连接MySQL数据库...
+2021-07-21 09:34:18 main: [INFO] DBConnector:51 - 实例化MySQL对象...
+2021-07-21 09:38:53 main: [INFO] Main:13 - MonitorControl starting...
+2021-07-21 09:38:53 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:38:53 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:38:53 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:38:53 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:38:53 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:38:53 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 09:38:53 main: [DEBUG] EntityFetcher:20 - Get list query executed.
+2021-07-21 09:38:53 main: [DEBUG] EntityFetcher:27 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-21 09:38:53 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 09:38:53 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 09:38:53 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:38:53 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:38:53 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:38:53 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:38:53 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:38:53 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 09:38:53 main: [DEBUG] EntityFetcher:40 - Get rule query executed.
+2021-07-21 09:38:53 main: [WARN] Dispatcher:65 - No rules found for this entity, continue.
+2021-07-21 09:38:53 main: [INFO] Main:18 - One turn executed.
+2021-07-21 09:52:40 main: [INFO] Main:13 - MonitorControl starting...
+2021-07-21 09:52:40 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:52:40 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:52:40 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:52:41 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:52:41 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:52:41 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 09:52:41 main: [DEBUG] EntityFetcher:20 - Get list query executed.
+2021-07-21 09:52:41 main: [DEBUG] EntityFetcher:27 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-21 09:52:41 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 09:52:41 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 09:52:41 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:52:41 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:52:41 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:52:41 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:52:41 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:52:41 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 09:52:41 main: [DEBUG] EntityFetcher:40 - Get rule query executed.
+2021-07-21 09:52:41 main: [WARN] Dispatcher:65 - No rules found for this entity, continue.
+2021-07-21 09:52:41 main: [INFO] Main:18 - One turn executed.
+2021-07-21 09:53:16 main: [INFO] Main:13 - MonitorControl starting...
+2021-07-21 09:53:16 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:53:16 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:53:16 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:53:16 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:53:16 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:53:16 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 09:53:16 main: [DEBUG] EntityFetcher:20 - Get list query executed.
+2021-07-21 09:53:16 main: [DEBUG] EntityFetcher:27 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-21 09:53:16 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 09:53:16 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 09:53:16 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:53:16 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:53:16 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:53:16 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:53:16 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:53:16 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 09:53:16 main: [DEBUG] EntityFetcher:40 - Get rule query executed.
+2021-07-21 09:53:16 main: [WARN] Dispatcher:65 - No rules found for this entity, continue.
+2021-07-21 09:53:16 main: [INFO] Main:18 - One turn executed.
+2021-07-21 09:53:24 main: [INFO] DBConnector:25 - MySQL parameters loaded.
+2021-07-21 09:53:24 main: [INFO] DBConnector:45 - JDBC DRIVER: com.mysql.jdbc.Driver
+2021-07-21 09:53:24 main: [INFO] DBConnector:47 - 连接MySQL数据库...
+2021-07-21 09:53:25 main: [INFO] DBConnector:51 - 实例化MySQL对象...
+2021-07-21 09:55:21 main: [INFO] DBConnector:25 - MySQL parameters loaded.
+2021-07-21 09:55:21 main: [INFO] DBConnector:45 - JDBC DRIVER: com.mysql.jdbc.Driver
+2021-07-21 09:55:21 main: [INFO] DBConnector:47 - 连接MySQL数据库...
+2021-07-21 09:55:21 main: [INFO] DBConnector:51 - 实例化MySQL对象...
+2021-07-21 09:55:27 main: [INFO] Main:13 - MonitorControl starting...
+2021-07-21 09:55:28 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:55:28 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:55:28 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:55:28 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:55:28 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:55:28 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 09:55:28 main: [DEBUG] EntityFetcher:20 - Get list query executed.
+2021-07-21 09:55:28 main: [DEBUG] EntityFetcher:27 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-21 09:55:28 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 09:55:28 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 09:55:28 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:55:28 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:55:28 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:55:28 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:55:28 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:55:28 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 09:55:28 main: [DEBUG] EntityFetcher:40 - Get rule query executed.
+2021-07-21 09:55:28 main: [WARN] Dispatcher:65 - No rules found for this entity, continue.
+2021-07-21 09:55:28 main: [INFO] Main:18 - One turn executed.
+2021-07-21 09:57:03 main: [INFO] Main:13 - MonitorControl starting...
+2021-07-21 09:57:03 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:57:03 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:57:03 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:57:04 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:57:04 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:57:04 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 09:57:04 main: [DEBUG] EntityFetcher:20 - Get list query executed.
+2021-07-21 09:57:04 main: [DEBUG] EntityFetcher:27 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-21 09:57:04 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 09:57:04 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 09:57:04 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:57:04 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:57:04 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:57:04 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:57:04 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:57:04 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 09:57:04 main: [DEBUG] EntityFetcher:40 - Get rule query executed.
+2021-07-21 09:57:04 main: [WARN] Dispatcher:65 - No rules found for this entity, continue.
+2021-07-21 09:57:04 main: [INFO] Main:18 - One turn executed.
+2021-07-21 09:57:30 main: [INFO] Main:13 - MonitorControl starting...
+2021-07-21 09:57:30 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:57:30 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:57:30 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:57:31 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:57:31 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:57:31 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 09:57:31 main: [DEBUG] EntityFetcher:20 - Get list query executed.
+2021-07-21 09:57:31 main: [DEBUG] EntityFetcher:27 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-21 09:57:31 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 09:57:31 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 09:57:31 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 09:57:31 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 09:57:31 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 09:57:31 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 09:57:31 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 09:57:31 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 09:57:31 main: [DEBUG] EntityFetcher:40 - Get rule query executed.
+2021-07-21 09:57:31 main: [WARN] Dispatcher:65 - No rules found for this entity, continue.
+2021-07-21 09:57:31 main: [INFO] Main:18 - One turn executed.
+2021-07-21 10:04:05 main: [INFO] Main:13 - MonitorControl starting...
+2021-07-21 10:04:06 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 10:04:06 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 10:04:06 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 10:04:06 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 10:04:06 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 10:04:06 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 10:04:06 main: [DEBUG] EntityFetcher:20 - Get list query executed.
+2021-07-21 10:04:06 main: [DEBUG] EntityFetcher:27 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-21 10:04:06 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 10:04:06 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 10:04:06 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 10:04:06 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 10:04:06 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 10:04:06 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 10:04:06 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 10:04:06 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 10:04:13 main: [DEBUG] EntityFetcher:40 - Get rule query executed.
+2021-07-21 10:06:21 main: [WARN] Dispatcher:65 - No rules found for this entity, continue.
+2021-07-21 10:06:21 main: [INFO] Main:18 - One turn executed.
+2021-07-21 10:06:33 main: [INFO] Main:13 - MonitorControl starting...
+2021-07-21 10:06:33 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 10:06:33 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 10:06:33 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 10:06:33 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 10:06:33 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 10:06:33 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 10:06:33 main: [DEBUG] EntityFetcher:20 - Get list query executed.
+2021-07-21 10:06:33 main: [DEBUG] EntityFetcher:27 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-21 10:06:33 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 10:06:33 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 10:06:33 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 10:06:33 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 10:06:33 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 10:06:33 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 10:06:33 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 10:06:33 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 10:06:33 main: [DEBUG] EntityFetcher:40 - Get rule query executed.
+2021-07-21 10:06:33 main: [WARN] Dispatcher:65 - No rules found for this entity, continue.
+2021-07-21 10:06:33 main: [INFO] Main:18 - One turn executed.
+2021-07-21 10:06:44 main: [INFO] DBConnector:25 - MySQL parameters loaded.
+2021-07-21 10:06:44 main: [INFO] DBConnector:45 - JDBC DRIVER: com.mysql.jdbc.Driver
+2021-07-21 10:06:44 main: [INFO] DBConnector:47 - 连接MySQL数据库...
+2021-07-21 10:06:44 main: [INFO] DBConnector:51 - 实例化MySQL对象...
+2021-07-21 10:07:35 main: [INFO] Main:13 - MonitorControl starting...
+2021-07-21 10:07:35 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 10:07:35 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 10:07:35 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 10:07:36 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 10:07:36 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 10:07:36 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 10:07:36 main: [DEBUG] EntityFetcher:20 - Get list query executed.
+2021-07-21 10:07:36 main: [DEBUG] EntityFetcher:27 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-21 10:07:36 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 10:07:36 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 10:07:36 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 10:07:36 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 10:07:36 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 10:07:36 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 10:07:36 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 10:07:36 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 10:07:36 main: [DEBUG] EntityFetcher:40 - Get rule query executed.
+2021-07-21 10:07:36 main: [DEBUG] EntityFetcher:54 - Rule query: id = 1, mid = 1, name = 下午十六点定点监控
+2021-07-21 10:07:36 main: [DEBUG] EntityFetcher:54 - Rule query: id = 2, mid = 1, name = 七点至九点监控
+2021-07-21 10:07:36 main: [DEBUG] EntityFetcher:54 - Rule query: id = 3, mid = 1, name = 上午九点定点监控
+2021-07-21 10:07:36 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 10:07:36 main: [DEBUG] EntityFetcher:61 - Get rule query connection detached.
+2021-07-21 10:07:36 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 下午十六点定点监控
+2021-07-21 10:07:36 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 七点至九点监控
+2021-07-21 10:07:36 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午九点定点监控
+2021-07-21 10:07:36 main: [DEBUG] Dispatcher:32 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-07-21 10:07:36 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 16:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_16pm_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 10:07:36 main: [INFO] Dispatcher:49 - Submitted an cron task.
+2021-07-21 10:07:36 pool-1-thread-1: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 10, start hour = 16, end keyword = END
+2021-07-21 10:07:36 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 1, task number waited in queue：0, completed task count: 0
+2021-07-21 10:07:36 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 09:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_9to11am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-21 10:07:36 main: [INFO] Dispatcher:53 - Submitted an span task.
+2021-07-21 10:07:36 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 2, task number waited in queue：0, completed task count: 1
+2021-07-21 10:07:36 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 10:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_10am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 10:07:36 main: [INFO] Dispatcher:49 - Submitted an cron task.
+2021-07-21 10:07:36 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 3, task number waited in queue：0, completed task count: 1
+2021-07-21 10:07:36 pool-1-thread-3: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 10, start hour = 10, end keyword = END
+2021-07-21 10:07:36 main: [INFO] Main:18 - One turn executed.
+2021-07-21 10:07:36 pool-1-thread-3: [DEBUG] MonitorLogger:72 - Time matched, starting cron task.
+2021-07-21 10:07:36 pool-1-thread-2: [DEBUG] MonitorLogger:29 - Span logging: current hour = 10, start hour = 9, end hour = 11, end keyword = END
+2021-07-21 10:07:36 pool-1-thread-3: [INFO] LoggingFileCleanUtil:17 - No old logging file exists, creating new at /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_10am_20210721.log
+2021-07-21 10:07:36 pool-1-thread-3: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-21 10:07:36 pool-1-thread-3: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-21 10:07:36 pool-1-thread-3: [DEBUG] OracleConnector:48 - USER = system
+2021-07-21 10:07:36 pool-1-thread-3: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-21 10:07:36 pool-1-thread-3: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-21 10:07:36 pool-1-thread-3: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-21 10:07:36 pool-1-thread-3: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-21 10:07:36 pool-1-thread-3: [DEBUG] OracleConnector:69 - USER = system
+2021-07-21 10:07:36 pool-1-thread-3: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'YYYYMMDD'), 'YYYYMMDD') AND ETL_JOB IN ('S00_TREE',
+'S04_ACCOUNT')
+2021-07-21 10:07:36 pool-1-thread-3: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-21 10:07:36 pool-1-thread-3: [INFO] MonitorLogger:91 - Out stream contains 'ERROR', sending alert mail now.
+2021-07-21 10:07:36 pool-1-thread-3: [INFO] SendMailUtil:21 - SendMail parameters: host = smtp.qq.com, port = 587, user = 97257385@qq.com
+2021-07-21 10:07:36 pool-1-thread-3: [DEBUG] SendMailUtil:26 - Parameters loaded: mail.smtp.host=smtp.qq.com, mail.smtp.port=587, hostUser=97257385@qq.com
+2021-07-21 10:07:36 pool-1-thread-3: [DEBUG] SendMailUtil:35 - Session established
+2021-07-21 10:13:21 main: [INFO] Main:13 - MonitorControl starting...
+2021-07-21 10:13:21 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 10:13:21 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 10:13:21 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 10:13:22 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 10:13:22 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 10:13:22 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 10:13:22 main: [DEBUG] EntityFetcher:20 - Get list query executed.
+2021-07-21 10:13:22 main: [DEBUG] EntityFetcher:27 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-21 10:13:22 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 10:13:22 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 10:13:22 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 10:13:22 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 10:13:22 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 10:13:22 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 10:13:22 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 10:13:22 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 10:13:22 main: [DEBUG] EntityFetcher:40 - Get rule query executed.
+2021-07-21 10:13:22 main: [DEBUG] EntityFetcher:54 - Rule query: id = 1, mid = 1, name = 下午十六点定点监控
+2021-07-21 10:13:22 main: [DEBUG] EntityFetcher:54 - Rule query: id = 2, mid = 1, name = 七点至九点监控
+2021-07-21 10:13:22 main: [DEBUG] EntityFetcher:54 - Rule query: id = 3, mid = 1, name = 上午九点定点监控
+2021-07-21 10:13:22 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 10:13:22 main: [DEBUG] EntityFetcher:61 - Get rule query connection detached.
+2021-07-21 10:13:22 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 下午十六点定点监控
+2021-07-21 10:13:22 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 七点至九点监控
+2021-07-21 10:13:22 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午九点定点监控
+2021-07-21 10:13:22 main: [DEBUG] Dispatcher:32 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-07-21 10:13:22 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 16:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_16pm_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 10:13:22 main: [INFO] Dispatcher:49 - Submitted an cron task.
+2021-07-21 10:13:22 pool-1-thread-1: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 10, start hour = 16, end keyword = END
+2021-07-21 10:13:22 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 1, task number waited in queue：0, completed task count: 0
+2021-07-21 10:13:22 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 09:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_9to11am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-21 10:13:22 main: [INFO] Dispatcher:53 - Submitted an span task.
+2021-07-21 10:13:22 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 2, task number waited in queue：0, completed task count: 1
+2021-07-21 10:13:22 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 10:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_10am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 10:13:22 main: [INFO] Dispatcher:49 - Submitted an cron task.
+2021-07-21 10:13:22 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 3, task number waited in queue：0, completed task count: 1
+2021-07-21 10:13:22 pool-1-thread-3: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 10, start hour = 10, end keyword = END
+2021-07-21 10:13:22 main: [INFO] Main:18 - One turn executed.
+2021-07-21 10:13:22 pool-1-thread-3: [DEBUG] MonitorLogger:72 - Time matched, starting cron task.
+2021-07-21 10:13:22 pool-1-thread-2: [DEBUG] MonitorLogger:29 - Span logging: current hour = 10, start hour = 9, end hour = 11, end keyword = END
+2021-07-21 10:13:22 pool-1-thread-3: [INFO] LoggingFileCleanUtil:14 - Old logging file exists, creating new at /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_10am_20210721.log
+2021-07-21 10:13:22 pool-1-thread-3: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-21 10:13:22 pool-1-thread-3: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-21 10:13:22 pool-1-thread-3: [DEBUG] OracleConnector:48 - USER = system
+2021-07-21 10:13:22 pool-1-thread-3: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-21 10:13:22 pool-1-thread-3: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-21 10:13:22 pool-1-thread-3: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-21 10:13:22 pool-1-thread-3: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-21 10:13:22 pool-1-thread-3: [DEBUG] OracleConnector:69 - USER = system
+2021-07-21 10:13:22 pool-1-thread-3: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'YYYYMMDD'), 'YYYYMMDD') AND ETL_JOB IN ('S00_TREE',
+'S04_ACCOUNT')
+2021-07-21 10:13:22 pool-1-thread-3: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-21 10:13:22 pool-1-thread-3: [INFO] MonitorLogger:91 - Out stream contains 'ERROR', sending alert mail now.
+2021-07-21 10:13:22 pool-1-thread-3: [INFO] SendMailUtil:21 - SendMail parameters: host = smtp.qq.com, port = 587, user = 97257385@qq.com
+2021-07-21 10:13:22 pool-1-thread-3: [DEBUG] SendMailUtil:26 - Parameters loaded: mail.smtp.host=smtp.qq.com, mail.smtp.port=587, hostUser=97257385@qq.com
+2021-07-21 10:13:22 pool-1-thread-3: [DEBUG] SendMailUtil:35 - Session established
+2021-07-21 10:13:25 pool-1-thread-3: [INFO] SendMailUtil:50 - Alert email sent.
+2021-07-21 10:45:50 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-21 10:45:50 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-21 10:45:50 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-21 10:45:50 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-21 10:45:50 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-21 10:45:50 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-21 10:45:50 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-21 10:45:50 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-21 10:45:50 main: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE ROW_NUM=0
+2021-07-21 10:46:18 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-21 10:46:18 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-21 10:46:18 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-21 10:46:18 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-21 10:46:19 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-21 10:46:19 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-21 10:46:19 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-21 10:46:19 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-21 10:46:19 main: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE 1=1 AND ETL_JOB IN ('S04_ACCOUNT',
+'S00_TREE',
+'S00_ORG')
+2021-07-21 10:46:19 main: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-21 10:46:30 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-21 10:46:30 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-21 10:46:30 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-21 10:46:31 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-21 10:46:31 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-21 10:46:31 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-21 10:46:31 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-21 10:46:31 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-21 10:46:31 main: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE 1=1
+2021-07-21 10:46:33 main: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-21 10:49:25 main: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-21 10:49:25 main: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-21 10:49:25 main: [DEBUG] OracleConnector:48 - USER = system
+2021-07-21 10:49:26 main: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-21 10:49:26 main: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-21 10:49:26 main: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-21 10:49:26 main: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-21 10:49:26 main: [DEBUG] OracleConnector:69 - USER = system
+2021-07-21 10:49:26 main: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE 1=1 AND ETL_JOB IN ('S04_ACCOUNT',
+'S00_TREE',
+'S00_ORG')
+2021-07-21 10:49:26 main: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-21 10:50:16 main: [INFO] Main:13 - MonitorControl starting...
+2021-07-21 10:50:16 main: [INFO] TimePrison:16 - Minute = 50, second = 16, entering time prison...
+2021-07-21 11:00:00 main: [INFO] TimePrison:29 - Escaped from time prison.
+2021-07-21 11:00:00 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 11:00:00 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 11:00:00 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 11:00:00 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 11:00:00 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 11:00:00 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 11:00:00 main: [DEBUG] EntityFetcher:20 - Get list query executed.
+2021-07-21 11:00:00 main: [DEBUG] EntityFetcher:27 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-21 11:00:00 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 11:00:00 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 11:00:00 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 11:00:00 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 11:00:00 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 11:00:01 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 11:00:01 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 11:00:01 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 11:00:01 main: [DEBUG] EntityFetcher:40 - Get rule query executed.
+2021-07-21 11:00:01 main: [DEBUG] EntityFetcher:54 - Rule query: id = 1, mid = 1, name = 下午十六点定点监控
+2021-07-21 11:00:01 main: [DEBUG] EntityFetcher:54 - Rule query: id = 2, mid = 1, name = 七点至九点监控
+2021-07-21 11:00:01 main: [DEBUG] EntityFetcher:54 - Rule query: id = 3, mid = 1, name = 上午十点定点监控
+2021-07-21 11:00:01 main: [DEBUG] EntityFetcher:54 - Rule query: id = 4, mid = 1, name = 上午十一点定点监控
+2021-07-21 11:00:01 main: [WARN] Dispatcher:65 - No rules found for this entity, continue.
+2021-07-21 11:00:01 main: [INFO] Main:18 - One turn executed.
+2021-07-21 13:35:26 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 13:35:26 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 13:35:26 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 13:35:26 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 13:35:26 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 13:35:26 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 13:35:26 main: [DEBUG] EntityFetcher:20 - Get list query executed.
+2021-07-21 13:35:26 main: [DEBUG] EntityFetcher:27 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-21 13:35:26 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 13:35:26 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 13:35:26 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 13:35:26 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 13:35:26 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 13:35:26 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 13:35:26 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 13:35:26 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 13:35:26 main: [DEBUG] EntityFetcher:40 - Get rule query executed.
+2021-07-21 13:35:26 main: [DEBUG] EntityFetcher:54 - Rule query: id = 1, mid = 1, name = 下午十六点定点监控
+2021-07-21 13:35:26 main: [DEBUG] EntityFetcher:54 - Rule query: id = 2, mid = 1, name = 七点至九点监控
+2021-07-21 13:35:26 main: [DEBUG] EntityFetcher:54 - Rule query: id = 3, mid = 1, name = 上午十点定点监控
+2021-07-21 13:35:26 main: [DEBUG] EntityFetcher:54 - Rule query: id = 4, mid = 1, name = 上午十一点定点监控
+2021-07-21 13:35:26 main: [DEBUG] EntityFetcher:54 - Rule query: id = 5, mid = 1, name = 上午十一点至十二点监控
+2021-07-21 13:35:26 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 13:35:26 main: [DEBUG] EntityFetcher:61 - Get rule query connection detached.
+2021-07-21 13:35:26 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 下午十六点定点监控
+2021-07-21 13:35:26 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 七点至九点监控
+2021-07-21 13:35:26 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午十点定点监控
+2021-07-21 13:35:26 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午十一点定点监控
+2021-07-21 13:35:26 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午十一点至十二点监控
+2021-07-21 13:35:26 main: [DEBUG] Dispatcher:32 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-07-21 13:35:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 16:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_16pm_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 13:35:26 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 13:35:26 pool-1-thread-1: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 13, start hour = 16, end keyword = END
+2021-07-21 13:35:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 1, task number waited in queue：0, completed task count: 0
+2021-07-21 13:35:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 09:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_9to11am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-21 13:35:26 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-21 13:35:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 2, task number waited in queue：0, completed task count: 1
+2021-07-21 13:35:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 10:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_10am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 13:35:26 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 13:35:26 pool-1-thread-3: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 13, start hour = 10, end keyword = END
+2021-07-21 13:35:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 3, task number waited in queue：0, completed task count: 1
+2021-07-21 13:35:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 13:35:26 pool-1-thread-2: [DEBUG] MonitorLogger:29 - Span logging: current hour = 13, start hour = 9, end hour = 11, end keyword = END
+2021-07-21 13:35:26 pool-1-thread-4: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 13, start hour = 11, end keyword = END
+2021-07-21 13:35:26 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 13:35:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 4, task number waited in queue：0, completed task count: 4
+2021-07-21 13:35:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 11:00:00 -> 12:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11to12am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-21 13:35:26 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-21 13:35:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 4
+2021-07-21 13:35:26 pool-1-thread-5: [DEBUG] MonitorLogger:29 - Span logging: current hour = 13, start hour = 11, end hour = 12, end keyword = END
+2021-07-21 13:35:26 main: [INFO] Main:18 - One turn executed.
+2021-07-21 14:51:23 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 14:51:23 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 14:51:23 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 14:51:23 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 14:51:23 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 14:51:23 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 14:51:23 main: [DEBUG] EntityFetcher:20 - Get list query executed.
+2021-07-21 14:51:23 main: [DEBUG] EntityFetcher:27 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-21 14:51:23 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 14:51:23 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 14:51:23 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 14:51:23 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 14:51:23 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 14:51:23 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 14:51:23 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 14:51:23 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 14:51:23 main: [DEBUG] EntityFetcher:40 - Get rule query executed.
+2021-07-21 14:51:23 main: [DEBUG] EntityFetcher:54 - Rule query: id = 1, mid = 1, name = 下午十六点定点监控
+2021-07-21 14:51:23 main: [DEBUG] EntityFetcher:54 - Rule query: id = 2, mid = 1, name = 七点至九点监控
+2021-07-21 14:51:23 main: [DEBUG] EntityFetcher:54 - Rule query: id = 3, mid = 1, name = 上午十点定点监控
+2021-07-21 14:51:23 main: [DEBUG] EntityFetcher:54 - Rule query: id = 4, mid = 1, name = 上午十一点定点监控
+2021-07-21 14:51:23 main: [DEBUG] EntityFetcher:54 - Rule query: id = 5, mid = 1, name = 上午十一点至十二点监控
+2021-07-21 14:51:23 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 14:51:23 main: [DEBUG] EntityFetcher:61 - Get rule query connection detached.
+2021-07-21 14:51:23 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 下午十六点定点监控
+2021-07-21 14:51:23 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 七点至九点监控
+2021-07-21 14:51:23 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午十点定点监控
+2021-07-21 14:51:23 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午十一点定点监控
+2021-07-21 14:51:23 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午十一点至十二点监控
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:32 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 16:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_16pm_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 14:51:23 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：1, completed task count: 5
+2021-07-21 14:51:23 pool-1-thread-1: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 14, start hour = 16, end keyword = END
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 09:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_9to11am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-21 14:51:23 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：1, completed task count: 6
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 10:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_10am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 14:51:23 pool-1-thread-3: [DEBUG] MonitorLogger:29 - Span logging: current hour = 14, start hour = 9, end hour = 11, end keyword = END
+2021-07-21 14:51:23 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 14:51:23 pool-1-thread-3: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 14, start hour = 10, end keyword = END
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 7
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 14:51:23 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：1, completed task count: 8
+2021-07-21 14:51:23 pool-1-thread-4: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 14, start hour = 11, end keyword = END
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 11:00:00 -> 12:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11to12am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-21 14:51:23 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 9
+2021-07-21 14:51:23 pool-1-thread-5: [DEBUG] MonitorLogger:29 - Span logging: current hour = 14, start hour = 11, end hour = 12, end keyword = END
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 16:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_16pm_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 14:51:23 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 14:51:23 pool-1-thread-1: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 14, start hour = 16, end keyword = END
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 10
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 09:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_9to11am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-21 14:51:23 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 11
+2021-07-21 14:51:23 pool-1-thread-2: [DEBUG] MonitorLogger:29 - Span logging: current hour = 14, start hour = 9, end hour = 11, end keyword = END
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 10:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_10am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 14:51:23 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 14:51:23 pool-1-thread-3: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 14, start hour = 10, end keyword = END
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 12
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 14:51:23 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 14:51:23 pool-1-thread-4: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 14, start hour = 11, end keyword = END
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 13
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 11:00:00 -> 12:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11to12am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-21 14:51:23 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-21 14:51:23 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 14
+2021-07-21 14:51:23 pool-1-thread-5: [DEBUG] MonitorLogger:29 - Span logging: current hour = 14, start hour = 11, end hour = 12, end keyword = END
+2021-07-21 14:51:23 main: [INFO] Main:18 - One turn executed.
+2021-07-21 16:04:08 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 16:04:08 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 16:04:08 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 16:04:08 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 16:04:08 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 16:04:08 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 16:04:08 main: [DEBUG] EntityFetcher:20 - Get list query executed.
+2021-07-21 16:04:08 main: [DEBUG] EntityFetcher:27 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-21 16:04:08 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 16:04:08 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 16:04:08 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 16:04:08 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 16:04:08 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 16:04:08 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 16:04:08 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 16:04:08 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 16:04:08 main: [DEBUG] EntityFetcher:40 - Get rule query executed.
+2021-07-21 16:04:08 main: [DEBUG] EntityFetcher:54 - Rule query: id = 1, mid = 1, name = 下午十六点定点监控
+2021-07-21 16:04:08 main: [DEBUG] EntityFetcher:54 - Rule query: id = 2, mid = 1, name = 七点至九点监控
+2021-07-21 16:04:08 main: [DEBUG] EntityFetcher:54 - Rule query: id = 3, mid = 1, name = 上午十点定点监控
+2021-07-21 16:04:08 main: [DEBUG] EntityFetcher:54 - Rule query: id = 4, mid = 1, name = 上午十一点定点监控
+2021-07-21 16:04:08 main: [DEBUG] EntityFetcher:54 - Rule query: id = 5, mid = 1, name = 上午十一点至十二点监控
+2021-07-21 16:04:08 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 16:04:08 main: [DEBUG] EntityFetcher:61 - Get rule query connection detached.
+2021-07-21 16:04:08 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 下午十六点定点监控
+2021-07-21 16:04:08 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 七点至九点监控
+2021-07-21 16:04:08 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午十点定点监控
+2021-07-21 16:04:08 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午十一点定点监控
+2021-07-21 16:04:08 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午十一点至十二点监控
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:32 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 16:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_16pm_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 16:04:08 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 15
+2021-07-21 16:04:08 pool-1-thread-1: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 16, start hour = 16, end keyword = END
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 09:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_9to11am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-21 16:04:08 pool-1-thread-1: [DEBUG] MonitorLogger:72 - Time matched, starting cron task.
+2021-07-21 16:04:08 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：1, completed task count: 15
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 10:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_10am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 16:04:08 pool-1-thread-2: [DEBUG] MonitorLogger:29 - Span logging: current hour = 16, start hour = 9, end hour = 11, end keyword = END
+2021-07-21 16:04:08 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 16:04:08 pool-1-thread-2: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 16, start hour = 10, end keyword = END
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 16
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 16:04:08 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：1, completed task count: 17
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 11:00:00 -> 12:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11to12am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-21 16:04:08 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-21 16:04:08 pool-1-thread-4: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 16, start hour = 11, end keyword = END
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：1, completed task count: 17
+2021-07-21 16:04:08 pool-1-thread-5: [DEBUG] MonitorLogger:29 - Span logging: current hour = 16, start hour = 11, end hour = 12, end keyword = END
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 16:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_16pm_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 16:04:08 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 16:04:08 pool-1-thread-3: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 16, start hour = 16, end keyword = END
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 19
+2021-07-21 16:04:08 pool-1-thread-3: [DEBUG] MonitorLogger:72 - Time matched, starting cron task.
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 09:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_9to11am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-21 16:04:08 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-21 16:04:08 pool-1-thread-2: [DEBUG] MonitorLogger:29 - Span logging: current hour = 16, start hour = 9, end hour = 11, end keyword = END
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 19
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 10:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_10am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 16:04:08 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 20
+2021-07-21 16:04:08 pool-1-thread-4: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 16, start hour = 10, end keyword = END
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 16:04:08 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 16:04:08 pool-1-thread-5: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 16, start hour = 11, end keyword = END
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 21
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 11:00:00 -> 12:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11to12am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-21 16:04:08 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 22
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 16:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_16pm_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 16:04:08 pool-1-thread-2: [DEBUG] MonitorLogger:29 - Span logging: current hour = 16, start hour = 11, end hour = 12, end keyword = END
+2021-07-21 16:04:08 pool-1-thread-4: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 16, start hour = 16, end keyword = END
+2021-07-21 16:04:08 pool-1-thread-1: [INFO] LoggingFileCleanUtil:17 - No old logging file exists, creating new at /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_16pm_20210721.log
+2021-07-21 16:04:08 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 16:04:08 pool-1-thread-4: [DEBUG] MonitorLogger:72 - Time matched, starting cron task.
+2021-07-21 16:04:08 pool-1-thread-3: [INFO] LoggingFileCleanUtil:17 - No old logging file exists, creating new at /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_16pm_20210721.log
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 23
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 09:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_9to11am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-21 16:04:08 pool-1-thread-4: [INFO] LoggingFileCleanUtil:14 - Old logging file exists, creating new at /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_16pm_20210721.log
+2021-07-21 16:04:08 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 23
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 10:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_10am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 16:04:08 pool-1-thread-5: [DEBUG] MonitorLogger:29 - Span logging: current hour = 16, start hour = 9, end hour = 11, end keyword = END
+2021-07-21 16:04:08 pool-1-thread-2: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 16, start hour = 10, end keyword = END
+2021-07-21 16:04:08 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 25
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 16:04:08 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 16:04:08 pool-1-thread-5: [DEBUG] MonitorLogger:68 - Cron logging: current hour = 16, start hour = 11, end keyword = END
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 25
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 11:00:00 -> 12:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11to12am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-21 16:04:08 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-21 16:04:08 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 26
+2021-07-21 16:04:08 main: [INFO] Main:18 - One turn executed.
+2021-07-21 16:04:08 pool-1-thread-2: [DEBUG] MonitorLogger:29 - Span logging: current hour = 16, start hour = 11, end hour = 12, end keyword = END
+2021-07-21 16:04:08 pool-1-thread-1: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-21 16:04:08 pool-1-thread-4: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-21 16:04:08 pool-1-thread-4: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-21 16:04:08 pool-1-thread-3: [INFO] OracleConnector:46 - Connecting Oracle database...
+2021-07-21 16:04:08 pool-1-thread-4: [DEBUG] OracleConnector:48 - USER = system
+2021-07-21 16:04:08 pool-1-thread-1: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-21 16:04:08 pool-1-thread-3: [DEBUG] OracleConnector:47 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-21 16:04:08 pool-1-thread-1: [DEBUG] OracleConnector:48 - USER = system
+2021-07-21 16:04:08 pool-1-thread-3: [DEBUG] OracleConnector:48 - USER = system
+2021-07-21 16:04:08 pool-1-thread-3: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-21 16:04:08 pool-1-thread-1: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-21 16:04:08 pool-1-thread-4: [INFO] OracleConnector:52 - Instantiating Oracle object...
+2021-07-21 16:04:08 pool-1-thread-4: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-21 16:04:08 pool-1-thread-1: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-21 16:04:08 pool-1-thread-3: [INFO] OracleConnector:54 - Oracle connection established.
+2021-07-21 16:04:08 pool-1-thread-1: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-21 16:04:08 pool-1-thread-1: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-21 16:04:08 pool-1-thread-1: [DEBUG] OracleConnector:69 - USER = system
+2021-07-21 16:04:08 pool-1-thread-4: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-21 16:04:08 pool-1-thread-4: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-21 16:04:08 pool-1-thread-4: [DEBUG] OracleConnector:69 - USER = system
+2021-07-21 16:04:08 pool-1-thread-4: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'YYYYMMDD'), 'YYYYMMDD') AND ETL_JOB IN ('S00_TREE',
+'S04_ACCOUNT')
+2021-07-21 16:04:08 pool-1-thread-3: [INFO] OracleConnector:67 - Connecting Oracle database...
+2021-07-21 16:04:08 pool-1-thread-3: [DEBUG] OracleConnector:68 - DB_URL = jdbc:oracle:thin:@localhost:1521:XE
+2021-07-21 16:04:08 pool-1-thread-3: [DEBUG] OracleConnector:69 - USER = system
+2021-07-21 16:04:08 pool-1-thread-3: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'YYYYMMDD'), 'YYYYMMDD') AND ETL_JOB IN ('S00_TREE',
+'S04_ACCOUNT')
+2021-07-21 16:04:08 pool-1-thread-1: [DEBUG] OracleConnector:70 - Fetched result for query: SELECT ETL_JOB, LAST_TXDATE, LAST_JOBSTATUS FROM ETL_JOB WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'YYYYMMDD'), 'YYYYMMDD') AND ETL_JOB IN ('S00_TREE',
+'S04_ACCOUNT')
+2021-07-21 16:04:08 pool-1-thread-1: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-21 16:04:08 pool-1-thread-1: [INFO] MonitorLogger:91 - Out stream contains 'ERROR', sending alert mail now.
+2021-07-21 16:04:08 pool-1-thread-3: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-21 16:04:08 pool-1-thread-3: [INFO] MonitorLogger:91 - Out stream contains 'ERROR', sending alert mail now.
+2021-07-21 16:04:08 pool-1-thread-4: [DEBUG] OracleConnector:93 - Oracle connection closed.
+2021-07-21 16:04:08 pool-1-thread-4: [INFO] MonitorLogger:91 - Out stream contains 'ERROR', sending alert mail now.
+2021-07-21 16:04:08 pool-1-thread-4: [INFO] SendMailUtil:21 - SendMail parameters: host = smtp.qq.com, port = 587, user = 97257385@qq.com
+2021-07-21 16:04:08 pool-1-thread-3: [INFO] SendMailUtil:21 - SendMail parameters: host = smtp.qq.com, port = 587, user = 97257385@qq.com
+2021-07-21 16:04:08 pool-1-thread-1: [INFO] SendMailUtil:21 - SendMail parameters: host = smtp.qq.com, port = 587, user = 97257385@qq.com
+2021-07-21 16:04:08 pool-1-thread-3: [DEBUG] SendMailUtil:26 - Parameters loaded: mail.smtp.host=smtp.qq.com, mail.smtp.port=587, hostUser=97257385@qq.com
+2021-07-21 16:04:08 pool-1-thread-4: [DEBUG] SendMailUtil:26 - Parameters loaded: mail.smtp.host=smtp.qq.com, mail.smtp.port=587, hostUser=97257385@qq.com
+2021-07-21 16:04:08 pool-1-thread-1: [DEBUG] SendMailUtil:26 - Parameters loaded: mail.smtp.host=smtp.qq.com, mail.smtp.port=587, hostUser=97257385@qq.com
+2021-07-21 16:04:08 pool-1-thread-3: [DEBUG] SendMailUtil:35 - Session established
+2021-07-21 16:04:08 pool-1-thread-4: [DEBUG] SendMailUtil:35 - Session established
+2021-07-21 16:04:08 pool-1-thread-1: [DEBUG] SendMailUtil:35 - Session established
+2021-07-21 16:04:12 pool-1-thread-4: [INFO] SendMailUtil:50 - Alert email sent.
+2021-07-21 16:04:12 pool-1-thread-3: [INFO] SendMailUtil:50 - Alert email sent.
+2021-07-21 16:04:12 pool-1-thread-1: [INFO] SendMailUtil:50 - Alert email sent.
+2021-07-21 16:36:25 main: [INFO] Main:13 - MonitorControl starting...
+2021-07-21 16:36:25 main: [INFO] TimePrison:16 - Minute = 36, second = 25, entering time prison...
+2021-07-21 16:40:01 main: [INFO] TimePrison:21 - Current minute = 40, second = 0
+2021-07-21 16:50:01 main: [INFO] TimePrison:21 - Current minute = 50, second = 0
+2021-07-21 17:00:00 main: [INFO] TimePrison:29 - Escaped from time prison.
+2021-07-21 17:00:00 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 17:00:00 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 17:00:00 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 17:00:01 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 17:00:01 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 17:00:01 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-21 17:00:01 main: [DEBUG] EntityFetcher:20 - Get list query executed.
+2021-07-21 17:00:01 main: [DEBUG] EntityFetcher:27 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-21 17:00:01 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 17:00:01 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-21 17:00:01 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-21 17:00:01 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-21 17:00:01 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-21 17:00:01 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-21 17:00:01 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-21 17:00:01 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-21 17:00:01 main: [DEBUG] EntityFetcher:40 - Get rule query executed.
+2021-07-21 17:00:01 main: [DEBUG] EntityFetcher:54 - Rule query: id = 1, mid = 1, name = 下午十六点定点监控
+2021-07-21 17:00:01 main: [DEBUG] EntityFetcher:54 - Rule query: id = 2, mid = 1, name = 七点至九点监控
+2021-07-21 17:00:01 main: [DEBUG] EntityFetcher:54 - Rule query: id = 3, mid = 1, name = 上午十点定点监控
+2021-07-21 17:00:01 main: [DEBUG] EntityFetcher:54 - Rule query: id = 4, mid = 1, name = 上午十一点定点监控
+2021-07-21 17:00:01 main: [DEBUG] EntityFetcher:54 - Rule query: id = 5, mid = 1, name = 上午十一点至十二点监控
+2021-07-21 17:00:01 main: [DEBUG] EntityFetcher:54 - Rule query: id = 6, mid = 0, name = 下午十七点定点监控
+2021-07-21 17:00:01 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-21 17:00:01 main: [DEBUG] EntityFetcher:61 - Get rule query connection detached.
+2021-07-21 17:00:01 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 下午十六点定点监控
+2021-07-21 17:00:01 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 七点至九点监控
+2021-07-21 17:00:01 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午十点定点监控
+2021-07-21 17:00:01 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午十一点定点监控
+2021-07-21 17:00:01 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午十一点至十二点监控
+2021-07-21 17:00:01 main: [DEBUG] Parser:33 - Parsing rules for mid = 0, name = 下午十七点定点监控
+2021-07-21 17:00:01 main: [DEBUG] Dispatcher:32 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-07-21 17:00:01 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 16:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_16pm_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 17:00:01 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 17:00:01 pool-1-thread-1: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 17, start hour = 16, end keyword = END
+2021-07-21 17:00:01 pool-1-thread-1: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-21 17:00:01 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 1, task number waited in queue：0, completed task count: 0
+2021-07-21 17:00:01 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 09:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_9to11am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-21 17:00:01 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-21 17:00:01 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 2, task number waited in queue：0, completed task count: 1
+2021-07-21 17:00:01 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 10:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_10am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 17:00:01 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 17:00:01 pool-1-thread-3: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 17, start hour = 10, end keyword = END
+2021-07-21 17:00:01 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 3, task number waited in queue：0, completed task count: 1
+2021-07-21 17:00:01 pool-1-thread-3: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-21 17:00:01 pool-1-thread-2: [DEBUG] MonitorLogger:29 - Span logging: current hour = 17, start hour = 9, end hour = 11, end keyword = END
+2021-07-21 17:00:01 pool-1-thread-2: [INFO] MonitorLogger:60 - Span logging for this task completed.
+2021-07-21 17:00:01 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-21 17:00:01 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-21 17:00:01 pool-1-thread-4: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 17, start hour = 11, end keyword = END
+2021-07-21 17:00:01 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 4, task number waited in queue：0, completed task count: 3
+2021-07-21 17:00:01 pool-1-thread-4: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-21 17:00:01 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 11:00:00 -> 12:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11to12am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-21 17:00:01 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-21 17:00:01 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 4
+2021-07-21 17:00:01 main: [INFO] Main:18 - One turn executed.
+2021-07-21 17:00:01 pool-1-thread-5: [DEBUG] MonitorLogger:29 - Span logging: current hour = 17, start hour = 11, end hour = 12, end keyword = END
+2021-07-21 17:00:01 pool-1-thread-5: [INFO] MonitorLogger:60 - Span logging for this task completed.
+2021-07-22 13:18:43 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-22 13:18:43 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-22 13:18:43 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-22 13:18:43 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-22 13:18:43 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-22 13:18:43 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-22 13:18:43 main: [DEBUG] EntityFetcher:20 - Get list query executed.
+2021-07-22 13:18:43 main: [DEBUG] EntityFetcher:27 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-22 13:18:43 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-22 13:18:43 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-22 13:18:43 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-22 13:18:43 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-22 13:18:43 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-22 13:18:43 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-22 13:18:43 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-22 13:18:43 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-22 13:18:43 main: [DEBUG] EntityFetcher:40 - Get rule query executed.
+2021-07-22 13:18:43 main: [DEBUG] EntityFetcher:54 - Rule query: id = 1, mid = 1, name = 下午十六点定点监控
+2021-07-22 13:18:43 main: [DEBUG] EntityFetcher:54 - Rule query: id = 2, mid = 1, name = 七点至九点监控
+2021-07-22 13:18:43 main: [DEBUG] EntityFetcher:54 - Rule query: id = 3, mid = 1, name = 上午十点定点监控
+2021-07-22 13:18:43 main: [DEBUG] EntityFetcher:54 - Rule query: id = 4, mid = 1, name = 上午十一点定点监控
+2021-07-22 13:18:43 main: [DEBUG] EntityFetcher:54 - Rule query: id = 5, mid = 1, name = 上午十一点至十二点监控
+2021-07-22 13:18:43 main: [DEBUG] EntityFetcher:54 - Rule query: id = 6, mid = 1, name = 下午十八点定点监控
+2021-07-22 13:18:43 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-22 13:18:43 main: [DEBUG] EntityFetcher:61 - Get rule query connection detached.
+2021-07-22 13:18:43 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 下午十六点定点监控
+2021-07-22 13:18:43 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 七点至九点监控
+2021-07-22 13:18:43 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午十点定点监控
+2021-07-22 13:18:43 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午十一点定点监控
+2021-07-22 13:18:43 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午十一点至十二点监控
+2021-07-22 13:18:43 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 下午十八点定点监控
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:32 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 16:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_16pm_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-22 13:18:43 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：1, completed task count: 5
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 09:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_9to11am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-22 13:18:43 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：1, completed task count: 5
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 10:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_10am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-22 13:18:43 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：1, completed task count: 5
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-22 13:18:43 pool-1-thread-2: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 13, start hour = 10, end keyword = END
+2021-07-22 13:18:43 pool-1-thread-1: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 13, start hour = 16, end keyword = END
+2021-07-22 13:18:43 pool-1-thread-4: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 13, start hour = 11, end keyword = END
+2021-07-22 13:18:43 pool-1-thread-2: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-22 13:18:43 pool-1-thread-3: [DEBUG] MonitorLogger:29 - Span logging: current hour = 13, start hour = 9, end hour = 11, end keyword = END
+2021-07-22 13:18:43 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-22 13:18:43 pool-1-thread-3: [INFO] MonitorLogger:60 - Span logging for this task completed.
+2021-07-22 13:18:43 pool-1-thread-4: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-22 13:18:43 pool-1-thread-1: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 6
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 11:00:00 -> 12:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11to12am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-22 13:18:43 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 9
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 16:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_16pm_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-22 13:18:43 pool-1-thread-5: [DEBUG] MonitorLogger:29 - Span logging: current hour = 13, start hour = 11, end hour = 12, end keyword = END
+2021-07-22 13:18:43 pool-1-thread-2: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 13, start hour = 16, end keyword = END
+2021-07-22 13:18:43 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-22 13:18:43 pool-1-thread-2: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-22 13:18:43 pool-1-thread-5: [INFO] MonitorLogger:60 - Span logging for this task completed.
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 9
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 09:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_9to11am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-22 13:18:43 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 11
+2021-07-22 13:18:43 pool-1-thread-3: [DEBUG] MonitorLogger:29 - Span logging: current hour = 13, start hour = 9, end hour = 11, end keyword = END
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 10:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_10am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-22 13:18:43 pool-1-thread-3: [INFO] MonitorLogger:60 - Span logging for this task completed.
+2021-07-22 13:18:43 pool-1-thread-4: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 13, start hour = 10, end keyword = END
+2021-07-22 13:18:43 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-22 13:18:43 pool-1-thread-4: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 12
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-22 13:18:43 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-22 13:18:43 pool-1-thread-1: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 13, start hour = 11, end keyword = END
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 13
+2021-07-22 13:18:43 pool-1-thread-1: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 11:00:00 -> 12:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11to12am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-22 13:18:43 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 14
+2021-07-22 13:18:43 pool-1-thread-2: [DEBUG] MonitorLogger:29 - Span logging: current hour = 13, start hour = 11, end hour = 12, end keyword = END
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 18:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_6pm_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-22 13:18:43 pool-1-thread-2: [INFO] MonitorLogger:60 - Span logging for this task completed.
+2021-07-22 13:18:43 pool-1-thread-5: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 13, start hour = 18, end keyword = END
+2021-07-22 13:18:43 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-22 13:18:43 pool-1-thread-5: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-22 13:18:43 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 15
+2021-07-22 13:18:43 main: [INFO] Main:18 - One turn executed.
+2021-07-22 17:27:26 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-22 17:27:26 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-22 17:27:26 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-22 17:27:26 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-22 17:27:26 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-22 17:27:26 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from list
+2021-07-22 17:27:26 main: [DEBUG] EntityFetcher:20 - Get list query executed.
+2021-07-22 17:27:26 main: [DEBUG] EntityFetcher:27 - Get list: mid = 1, name = EAST, description = EAST监管报送监控
+2021-07-22 17:27:26 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-22 17:27:26 main: [INFO] Parser:23 - Dispatch task lists parsed.
+2021-07-22 17:27:26 main: [INFO] MySQLConnector:58 - Connecting MySQL database...
+2021-07-22 17:27:26 main: [DEBUG] MySQLConnector:59 - DB_URL = jdbc:mysql://localhost:3306/MonitorControl
+2021-07-22 17:27:26 main: [DEBUG] MySQLConnector:60 - USER = root
+2021-07-22 17:27:26 main: [INFO] MySQLConnector:64 - Instantiating MySQL object...
+2021-07-22 17:27:26 main: [INFO] MySQLConnector:66 - MySQL connection established.
+2021-07-22 17:27:26 main: [DEBUG] MySQLConnector:78 - Fetched results for query:select * from rule where enable=1
+2021-07-22 17:27:26 main: [DEBUG] EntityFetcher:40 - Get rule query executed.
+2021-07-22 17:27:26 main: [DEBUG] EntityFetcher:54 - Rule query: id = 1, mid = 1, name = 下午十六点定点监控
+2021-07-22 17:27:26 main: [DEBUG] EntityFetcher:54 - Rule query: id = 2, mid = 1, name = 七点至九点监控
+2021-07-22 17:27:26 main: [DEBUG] EntityFetcher:54 - Rule query: id = 3, mid = 1, name = 上午十点定点监控
+2021-07-22 17:27:26 main: [DEBUG] EntityFetcher:54 - Rule query: id = 4, mid = 1, name = 上午十一点定点监控
+2021-07-22 17:27:26 main: [DEBUG] EntityFetcher:54 - Rule query: id = 5, mid = 1, name = 上午十一点至十二点监控
+2021-07-22 17:27:26 main: [DEBUG] EntityFetcher:54 - Rule query: id = 6, mid = 1, name = 下午十八点定点监控
+2021-07-22 17:27:26 main: [DEBUG] MySQLConnector:92 - MySQL connection closed.
+2021-07-22 17:27:26 main: [DEBUG] EntityFetcher:61 - Get rule query connection detached.
+2021-07-22 17:27:26 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 下午十六点定点监控
+2021-07-22 17:27:26 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 七点至九点监控
+2021-07-22 17:27:26 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午十点定点监控
+2021-07-22 17:27:26 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午十一点定点监控
+2021-07-22 17:27:26 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 上午十一点至十二点监控
+2021-07-22 17:27:26 main: [DEBUG] Parser:33 - Parsing rules for mid = 1, name = 下午十八点定点监控
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:32 - Executing scheduled task mid = 1, dispatch name = EAST
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 16:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_16pm_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-22 17:27:26 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-22 17:27:26 pool-1-thread-3: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 17, start hour = 16, end keyword = END
+2021-07-22 17:27:26 pool-1-thread-3: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 16
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 09:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_9to11am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-22 17:27:26 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 17
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 10:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_10am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-22 17:27:26 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 17
+2021-07-22 17:27:26 pool-1-thread-4: [DEBUG] MonitorLogger:29 - Span logging: current hour = 17, start hour = 9, end hour = 11, end keyword = END
+2021-07-22 17:27:26 pool-1-thread-4: [INFO] MonitorLogger:60 - Span logging for this task completed.
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-22 17:27:26 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 18
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 11:00:00 -> 12:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11to12am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-22 17:27:26 pool-1-thread-1: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 17, start hour = 10, end keyword = END
+2021-07-22 17:27:26 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-22 17:27:26 pool-1-thread-2: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 17, start hour = 11, end keyword = END
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 18
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 16:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_16pm_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-22 17:27:26 pool-1-thread-5: [DEBUG] MonitorLogger:29 - Span logging: current hour = 17, start hour = 11, end hour = 12, end keyword = END
+2021-07-22 17:27:26 pool-1-thread-1: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-22 17:27:26 pool-1-thread-5: [INFO] MonitorLogger:60 - Span logging for this task completed.
+2021-07-22 17:27:26 pool-1-thread-3: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 17, start hour = 16, end keyword = END
+2021-07-22 17:27:26 pool-1-thread-3: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-22 17:27:26 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-22 17:27:26 pool-1-thread-2: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 21
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 09:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_9to11am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-22 17:27:26 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 22
+2021-07-22 17:27:26 pool-1-thread-4: [DEBUG] MonitorLogger:29 - Span logging: current hour = 17, start hour = 9, end hour = 11, end keyword = END
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 10:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_10am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-22 17:27:26 pool-1-thread-4: [INFO] MonitorLogger:60 - Span logging for this task completed.
+2021-07-22 17:27:26 pool-1-thread-1: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 17, start hour = 10, end keyword = END
+2021-07-22 17:27:26 pool-1-thread-1: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-22 17:27:26 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 24
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-22 17:27:26 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-22 17:27:26 pool-1-thread-5: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 17, start hour = 11, end keyword = END
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 24
+2021-07-22 17:27:26 pool-1-thread-5: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 11:00:00 -> 12:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11to12am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-22 17:27:26 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 25
+2021-07-22 17:27:26 pool-1-thread-3: [DEBUG] MonitorLogger:29 - Span logging: current hour = 17, start hour = 11, end hour = 12, end keyword = END
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 18:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_6pm_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-22 17:27:26 pool-1-thread-3: [INFO] MonitorLogger:60 - Span logging for this task completed.
+2021-07-22 17:27:26 pool-1-thread-2: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 17, start hour = 18, end keyword = END
+2021-07-22 17:27:26 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-22 17:27:26 pool-1-thread-2: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 26
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 16:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_16pm_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-22 17:27:26 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-22 17:27:26 pool-1-thread-4: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 17, start hour = 16, end keyword = END
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 27
+2021-07-22 17:27:26 pool-1-thread-4: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 09:00:00 -> 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_9to11am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-22 17:27:26 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 28
+2021-07-22 17:27:26 pool-1-thread-1: [DEBUG] MonitorLogger:29 - Span logging: current hour = 17, start hour = 9, end hour = 11, end keyword = END
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 10:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_10am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-22 17:27:26 pool-1-thread-1: [INFO] MonitorLogger:60 - Span logging for this task completed.
+2021-07-22 17:27:26 pool-1-thread-5: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 17, start hour = 10, end keyword = END
+2021-07-22 17:27:26 pool-1-thread-5: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-22 17:27:26 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 30
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 11:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11am_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-22 17:27:26 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-22 17:27:26 pool-1-thread-3: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 17, start hour = 11, end keyword = END
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 30
+2021-07-22 17:27:26 pool-1-thread-3: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = span, time span = 11:00:00 -> 12:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/morning_11to12am_yyyymmdd.log, where clause = WHERE LAST_JOBSTATUS='Failed'
+2021-07-22 17:27:26 main: [INFO] Dispatcher:53 - Span task completed.
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 31
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:44 - Executing scheduled task type = cron, time span = 18:00:00, output path = /Users/tianzhuoli/Desktop/BOS/20210225_MonitorControl/afternoon_6pm_yyyymmdd.log, where clause = WHERE LAST_TXDATE<TO_DATE(TO_CHAR(SYSDATE-1, 'yyyymmdd'), 'yyyymmdd')
+2021-07-22 17:27:26 pool-1-thread-2: [DEBUG] MonitorLogger:29 - Span logging: current hour = 17, start hour = 11, end hour = 12, end keyword = END
+2021-07-22 17:27:26 pool-1-thread-4: [DEBUG] MonitorLogger:70 - Cron logging: current hour = 17, start hour = 18, end keyword = END
+2021-07-22 17:27:26 main: [INFO] Dispatcher:49 - Cron task completed.
+2021-07-22 17:27:26 pool-1-thread-4: [INFO] MonitorLogger:98 - Cron logging for this task completed.
+2021-07-22 17:27:26 pool-1-thread-2: [INFO] MonitorLogger:60 - Span logging for this task completed.
+2021-07-22 17:27:26 main: [DEBUG] Dispatcher:60 - Thread number in thread pool: 5, task number waited in queue：0, completed task count: 31
+2021-07-22 17:27:26 main: [INFO] Main:18 - One turn executed.

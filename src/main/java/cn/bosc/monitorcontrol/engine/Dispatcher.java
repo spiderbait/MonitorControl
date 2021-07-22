@@ -45,12 +45,12 @@ public class Dispatcher {
                             + ", output path = " + path + ", where clause = " + whereClause);
                     switch (type.toLowerCase()) {
                         case "cron":
-                            executor.execute(new CronTaskLauncher(title, receivers, whereClause, span, path, jobList, endKeyword));
-                            logger.info("Submitted an cron task.");
+                            executor.execute(new CronTaskLauncher(title, receivers, whereClause, span, path, jobList, endKeyword, new MonitorLogger()));
+                            logger.info("Cron task completed.");
                             break;
                         case "span":
-                            executor.execute(new SpanTaskLauncher(title, receivers, whereClause, span, path, jobList, endKeyword));
-                            logger.info("Submitted an span task.");
+                            executor.execute(new SpanTaskLauncher(title, receivers, whereClause, span, path, jobList, endKeyword, new MonitorLogger()));
+                            logger.info("Span task completed.");
                             break;
                         default:
                             logger.error("TYPE ERROR!");
@@ -63,7 +63,6 @@ public class Dispatcher {
             }
         } catch (NullPointerException e) {
             logger.warn("No rules found for this entity, continue.");
-
         }
     }
 }

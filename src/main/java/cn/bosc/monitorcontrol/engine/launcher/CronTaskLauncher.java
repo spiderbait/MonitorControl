@@ -11,11 +11,11 @@ public class CronTaskLauncher implements Runnable{
     List<String> jobList;
     String whereClause;
     String endKeyword;
-    MonitorLogger ml = new MonitorLogger();
+    MonitorLogger ml;
     String title;
     String[] receivers;
 
-    public CronTaskLauncher(String title, String[] receivers, String whereClause, String span, String path, List<String> jobList, String endKeyword) {
+    public CronTaskLauncher(String title, String[] receivers, String whereClause, String span, String path, List<String> jobList, String endKeyword, MonitorLogger ml) {
         this.whereClause = whereClause;
         this.span = span;
         this.path = path;
@@ -23,6 +23,7 @@ public class CronTaskLauncher implements Runnable{
         this.endKeyword = endKeyword;
         this.title = title;
         this.receivers = receivers;
+        this.ml = ml;
     }
 
     @Override

@@ -91,10 +91,10 @@ public class DBConnector {
 
     public static void main(String[] args) throws SQLException {
         DBConnector dbc = new DBConnector();
-        dbc.getConnection("Oracle");
-        ResultSet rs = dbc.execQuery("select * from etl_job");
+        dbc.getConnection("MySQL");
+        ResultSet rs = dbc.execQuery("select * from rule where enable=1");
         while(rs.next()) {
-            System.out.println(rs.getString(1));
+            System.out.println(rs.getString("receivers"));
         }
         dbc.closeConnection();
     }

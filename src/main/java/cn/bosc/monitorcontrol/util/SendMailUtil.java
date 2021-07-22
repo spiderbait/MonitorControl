@@ -32,7 +32,7 @@ public class SendMailUtil {
                 return new PasswordAuthentication(hostUser, hostPassword);
             }
         });
-        logger.debug("Session established");
+        logger.debug("Session established.");
         MimeMessage message = new MimeMessage(session);
 
         // 设置发件人邮件地址
@@ -47,6 +47,7 @@ public class SendMailUtil {
         message.setText(content);
 
         Transport.send(message);
+        logger.info("Alert email sent.");
     }
 
     public static void printParameters() {

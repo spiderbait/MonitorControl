@@ -11,6 +11,8 @@ public class BatchInfoFetcherTest {
         list.add("S04_ACCOUNT");
         list.add("S00_TREE");
         list.add("S00_ORG");
-        System.out.println(bif.getDelayedBatch("", list));
+//        list.clear();
+        bif.getBatchInfo("WHERE 1=1", list);
+//        System.out.println(bif.getDelayedBatch("", list));
     }
 }

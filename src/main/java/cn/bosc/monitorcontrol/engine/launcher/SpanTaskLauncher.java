@@ -13,9 +13,9 @@ public class SpanTaskLauncher implements Runnable{
     List<String> jobList;
     String whereClause;
     String endKeyword;
-    MonitorLogger ml = new MonitorLogger();
+    MonitorLogger ml;
 
-    public SpanTaskLauncher(String title, String[] receivers, String whereClause, String span, String path, List<String> jobList, String endKeyword) {
+    public SpanTaskLauncher(String title, String[] receivers, String whereClause, String span, String path, List<String> jobList, String endKeyword, MonitorLogger ml) {
         this.title = title;
         this.receivers = receivers;
         this.whereClause = whereClause;
@@ -23,6 +23,7 @@ public class SpanTaskLauncher implements Runnable{
         this.path = path;
         this.jobList = jobList;
         this.endKeyword = endKeyword;
+        this.ml = ml;
     }
 
     @Override

@@ -57,6 +57,8 @@ public class MonitorLogger {
                     }
                 }
             }
+            logger.info("Span logging for this task completed.");
+            Thread.interrupted();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -93,6 +95,8 @@ public class MonitorLogger {
                 }
                 out.close();
             }
+            logger.info("Cron logging for this task completed.");
+            Thread.interrupted();
         } catch (Exception e) {
             e.printStackTrace();
         }
